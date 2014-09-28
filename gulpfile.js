@@ -74,6 +74,7 @@ gulp.task('prepDist', function() {
     gulp.src([srcapp + '*.html', srcapp + '*.txt', srcapp + '*.json', srcapp + '*.appcache'])
         .pipe(htmlreplace({
             'styles': 'css/styles.css',
+            'cordova': '',
             'scripts': 'js/scripts.js',
             'inc': '@@include(\'gtm.inc\')'
         }))
