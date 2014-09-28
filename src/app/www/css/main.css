@@ -1,0 +1,567 @@
+/* =BASE
+---------------------------------------------------------------------------------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* {
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering: -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: optimizeSpeed;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+/* =FONTS
+---------------------------------------------------------------------------------------*/
+
+/* =GLOBAL
+---------------------------------------------------------------------------------------*/
+
+html {
+	background:#eee;
+	font-size:15px;
+    line-height: 32px;
+    height: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* =APP
+---------------------------------------------------------------------------------------*/
+
+/*Main App Container*/
+#app {
+	width:100%;
+	height:100%;
+	margin:0 auto 0 auto;
+	/*position:relative;*/
+	position: absolute;
+	overflow: hidden;
+}
+/* The ghost, nudged to maintain perfect centering */
+#app:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+	margin-right: -4px;
+}
+#appInner {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin-left: 0;
+	vertical-align: middle;
+	left: 0;
+	overflow: hidden;
+}
+#header,
+#footer {
+	display: none;
+	position: absolute;
+	z-index: 0;
+	height:85px;
+	width: 100%;
+}
+
+
+/*Screens*/
+.appScreen
+{
+	position:absolute;
+	top:85px;
+	bottom:85px;
+	left:0;
+	right:0;
+	margin:0 15px 0 15px;
+}
+
+/*Splash Screen*/
+#screenSplash {
+	z-index: 4;
+	display: none;
+}
+#screenSplash #splashBase {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:2;
+  	cursor: default;
+}
+#screenSplash #splashInner {
+	padding:20px;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+#screenSplash #splashInner h1{
+    line-height: 58px;
+    font-size:40px;
+	position: absolute;
+	text-align: center;
+	height: 192px;
+	padding:75px 0 0 0;
+	top: 50%;
+	margin-top: -105px;
+	left: 25px;
+	right: 25px;
+}
+#screenSplash #splashInner h1:before{
+	width:125px;
+	content: '';
+	position: absolute;
+	height: 125px;
+	top: 0;
+	left: 50%;
+	margin-left: -63px;
+}
+#screenSplash #splashInner h2{
+	position:absolute;
+	bottom:20px;
+}
+
+/*Page Screen*/
+#screenPrivacy {
+	z-index: 1;
+	display: none;
+}
+#screenPrivacy #privacyBase {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:2;
+  	cursor: default;
+}
+#screenPrivacy #privacyInner {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+    padding: 20px;
+    cursor: default;
+}
+#screenPrivacy #privacyInner h1{
+    line-height: 58px;
+    font-size:32px;
+	text-align: center;
+}
+#screenPrivacy #privacyContent {
+	position:absolute;
+	top:80px;
+	right:4px;
+	bottom:20px;
+	left:20px;
+    padding-right: 16px;
+}
+#screenPrivacy h2
+{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#screenPrivacy p
+{
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
+}
+
+/*Passage Screen*/
+#screenPassage {
+	z-index: 3;
+}
+#screenPassage #passageBase {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index:2;
+  	cursor: move;
+    cursor: -moz-grab;
+}
+#screenPassage #passageBase:before {
+	bottom:9px;
+	content: "";
+	height: 60%;
+	left: 15px;
+	position: absolute;
+	width: 75%;
+	z-index: -2;
+}
+#screenPassage #passageBase:after {
+	content: "";
+	height: 60%;
+	position: absolute;
+	right: 15px;
+	width: 75%;
+	z-index: -1;
+}
+#screenPassage #passageInner {
+    background:#CCC;
+	padding:20px;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+#screenPassage #passageText {
+    line-height: 34px;
+    font-size:22px;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	letter-spacing: 0.05em;
+}
+#screenPassage #passageID {
+	position:absolute;
+	bottom:20px;
+}
+#screenPassage #passageLoad {
+	display:block;
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+#screenPassage #passageLoad.loading {
+	background:#999;
+}
+
+#screenPassage #passageLoad.reload{
+	background:#999;
+}
+#screenPassage #passageLoad.reload:hover {
+	/*background: transparent;*/
+}
+/*Favorites Screen*/
+#screenFavorites {
+	z-index: 2;
+	display: none;
+}
+#screenFavorites ul#favorites {
+	height: 100%;
+	width: 100%;
+}
+#screenFavorites ul#favorites li {
+	height: 12.5%;
+	display: table;
+	padding:0 3px 6px 3px;
+	float:left;
+	background: none;
+	width: 33.333333333333333%;
+	position: relative;
+}
+#screenFavorites ul#favorites li > div {
+    top: 0px;
+	left: 0px;
+	z-index: 2;
+	background:#fff;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+#screenFavorites ul#favorites li div.fav {
+	background:#ccc;
+	text-align:center;
+    cursor: move;
+    cursor: -moz-grab;
+}
+#screenFavorites ul#favorites li div.placeholder {
+	border-left: solid 1px #999;
+	border-top: solid 1px #999;
+	border-bottom: solid 1px #999;
+	border-right: solid 1px #999;
+}
+
+/*Drag n Drop*/
+#screenPassage #passageBase.dragged,
+#screenFavorites ul#favorites li div.dragged {
+	position:absolute;
+	left:0;
+	right:auto;
+	/*top:85px;*/
+	bottom:auto;
+	cursor: -moz-grabbing;
+}
+
+/*Navigation*/
+.star,
+.socialControls,
+.home,
+.delete,
+.info {
+	display:block;
+	position:absolute;
+	left:50%;
+	margin-left:-27px;
+	background:#666;
+	border:solid 2px #666;
+	width: 54px;
+	height: 54px;
+	cursor: pointer;
+}
+.star {
+	top: 13px;
+	display: none;
+}
+.socialControls {
+	bottom:13px;
+	display: none;
+}
+.home {
+	top:13px;
+	display:none;
+}
+.delete {
+	opacity: 0;
+	left:auto;
+	top: auto;
+	width: 24px;
+	height: 24px;
+	bottom: 29px;
+	right: 16px;
+	cursor: default;
+}
+.info {
+    left:auto;
+	top: auto;
+	display: none;
+	width: 26px;
+	height: 26px;
+	bottom: 28px;
+	right: 15px;
+}
+.hit {
+	border:solid 2px #999;
+	background:#999;
+}
+#virtualNav {
+	display: none;
+}
+
+/*Messages*/
+/* This parent can be any width and height - http://css-tricks.com/centering-in-the-unknown/ */
+.modal {
+	position: absolute;
+    width: 0px;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    z-index: 50;
+    text-align: center;
+    display: inline-block;
+}
+
+.modal.show {
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+	margin-right: -4px;
+}
+/* The element to be centered, can also be of any width and height */
+.modalBody {
+    background-color:#999;
+	display: inline-block;
+    vertical-align: middle;
+    width: 0px;
+	height: 0px;
+    min-height: 0px;
+    max-height: 200px;
+    z-index: 100;
+    position: relative;
+	opacity: 0;
+	overflow: hidden;
+}
+.modal.show .modalBody{
+	width: 260px;
+	opacity: 1;
+	height: 200px;
+	overflow: auto;
+}
+.showMenu .modalBody{
+    min-height: 90px;
+}
+.modalMessage{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 10px 4px 10px 10px;
+    padding-right: 2px;
+    max-height: 130px;
+    cursor: default;
+}
+.modalMessage h1,
+.modalMessage h2
+{
+    font-weight: bold;
+}
+.modalMessage h2
+{
+    margin-bottom: 5px;
+}
+.modalMessage p
+{
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+}
+.modalMessage a {
+    /*color: red;*/
+}
+.modalMessage .unicode {
+    font-size: 32px;
+    margin-bottom: 0;
+    line-height: 36px;
+}
+.modalMessage span {
+    display: block;
+}
+.showMenu .modalMessage{
+    margin: 10px 4px 60px 10px;
+}
+/* Share Modal*/
+.modalMessage .modalShare p {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 32px;
+}
+.modalMessage .modalShare p span {
+	margin-bottom: -8px;
+}
+.modalMenu
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.modalMenu a
+{
+    background: #000;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 5px 0 5px;
+
+	text-indent: -5000px;
+}
+.modalMenu a:hover {
+	background:#ccc;
+}
+.modalMenu a.deny {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 8px;
+}
+
+
+@media only screen and (min-width:480px) {
+    /* Style adjustments for viewports that meet the condition */
+	/*place the nav on the right and left*/
+
+.appScreen
+{
+    position:absolute;
+	top:0;
+	bottom:0;
+	left:85px;
+	right:85px;
+	margin:15px 0 15px 0;
+}
+
+/*Navigation*/
+.star,
+.socialControls,
+.home,
+.delete,
+.info {
+	top:50%;
+	margin-top:-27px;
+	left: 0;
+	margin-left: 0;
+}
+.star {
+	left: 13px;
+}
+.socialControls {
+	left:auto;
+	right:13px;
+}
+.home {
+	left:13px;
+}
+.delete {
+	left:auto;
+	top: auto;
+	bottom: 31px;
+	right: 29px;
+}
+.info {
+    left:auto;
+	top: auto;
+	bottom: 30px;
+	right: 28px;
+}
+
+}
+
+@media only screen and (min-width:600px) {
+    /* Style adjustments for viewports that meet the condition */
+	/*place the nav on the right and left, add "branding" banner, center vertically and horizontally*/
+
+#appInner {
+	width: 480px;
+	height: 580px;
+	display: inline-block;
+	position: relative;
+	margin-left: -240px;
+	vertical-align: middle;
+	left: 50%;
+}
+#header,
+#footer {
+	display: none; /*Disabled until content and layout can be determined.*/
+}
+.appScreen
+{
+    position:absolute;
+	top:85px;
+	bottom:85px;
+	left:85px;
+	right:85px;
+	margin:0;
+}
+
+}
+

@@ -1,0 +1,61 @@
+# humanstxt.org/
+
+# TEAM
+
+Doug Scamahorn -- Digital MacGyver -- @dscamahorn
+
+# THANKS
+
+Father, Son, Holy Ghost
+
+# TECHNOLOGY COLOPHON
+
+HTML, CSS, JS
+
+## Open Source Projects Utilized
+
+### Code
+
+#### Common
+
+* [H5bp Mobile Boilerplate](http://html5boilerplate.com/mobile/)
+* [jQuery](http://jquery.com/)
+* [Modernizr](http://modernizr.com/)
+* [Normalize](http://necolas.github.io/normalize.css/)
+* [YUI](http://yuilibrary.com/yui/docs/cssreset/)
+
+#### Site Specific
+
+* [Greensock](http://greensock.com/)
+* [ScrollMagic](http://janpaepke.github.io/ScrollMagic/)
+
+#### App Specific
+
+* [AmplifyJS](http://amplifyjs.com/)
+* [Shake.js](https://github.com/alexgibson/shake.js)
+* [Cordova]()
+* [PhoneGap]()
+
+### Typography
+
+* [Cabin](https://www.google.com/fonts/specimen/Cabin)
+* [Rosarivo](http://www.google.com/fonts/specimen/Rosarivo)
+
+### Bible Source
+
+* [SacredBible.org](http://www.sacredbible.org/)
+
+## Visual Design Resources
+
+* [App Icon Template](http://appicontemplate.com/)
+* [The Dore Gallery of Bible Illustrations, Complete](http://www.gutenberg.org/files/8710/8710-h/images/036.jpg)
+
+Image source assets pending.
+
+## License
+
+This software is licensed under the MIT License (MIT).
+
+***
+
+**✝ Returning with increase to the Lord.**

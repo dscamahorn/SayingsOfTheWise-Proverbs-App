@@ -1,0 +1,117 @@
+/* =BASE
+---------------------------------------------------------------------------------------*/
+
+/* =FONTS
+---------------------------------------------------------------------------------------*/
+
+/* =GLOBAL
+---------------------------------------------------------------------------------------*/
+
+/* =APP
+---------------------------------------------------------------------------------------*/
+
+#screenPassage #passageBase {
+	/*
+	-webkit-transition: top 0.25s ease-out,left 0.25s ease-out;
+	-moz-transition: top 0.25s ease-out,left 0.25s ease-out;
+	transition: top 0.25s ease-out,left 0.25s ease-out;
+	*/
+}
+#screenPassage #passageText {
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+#screenPassage #passageID {
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+#screenPassage #passageLoad.loading {
+	-webkit-animation:spin 0.75s infinite linear;
+	-moz-animation:spin 0.75s infinite linear;
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+}
+
+.no-touch #screenPassage #passageLoad.reload{
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+.no-touch #screenPassage #passageLoad.reload:hover {
+	-webkit-animation:spin 0.75s infinite linear;
+	-moz-animation:spin 0.75s infinite linear;
+    -webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg); }
+}
+
+
+#screenFavorites ul#favorites li div.fav {
+	/*
+	-webkit-transition: top 0.25s ease-out,left 0.25s ease-out;
+	-moz-transition: top 0.25s ease-out,left 0.25s ease-out;
+	transition: top 0.25s ease-out,left 0.25s ease-out;
+	*/
+}
+/*Navigation*/
+.star,
+.socialControls,
+.home,
+.delete,
+.info {
+	/*
+    -webkit-transition: border 0.25s ease-out, background 0.25s ease-out, opacity 0.25s ease-out;
+	-moz-transition: border 0.25s ease-out, background 0.25s ease-out, opacity 0.25s ease-out;
+	transition: border 0.25s ease-out, background 0.25s ease-out, opacity 0.25s ease-out;
+   	*/
+    -webkit-transition: border 0.25s ease-out;
+	-moz-transition: border 0.25s ease-out;
+	transition: border 0.25s ease-out;
+
+}
+/*Messages*/
+/* This parent can be any width and height - http://css-tricks.com/centering-in-the-unknown/ */
+.modal {
+	-webkit-transition:
+		width 0s linear 0.5s;
+	-moz-transition:
+		width 0s linear 0.5s;
+	transition:
+		width 0s linear 0.5s;
+}
+
+.modal.show {
+	-webkit-transition:
+		width 0s linear 0s;
+	-moz-transition:
+		width 0s linear 0s;
+	transition:
+		width 0s linear 0s;
+}
+
+/* The element to be centered, can also be of any width and height */
+.modalBody {
+    -webkit-transition:
+	opacity 0.25s ease-out 0s,
+	height 0s linear 0.25s,
+	width 0s linear 0.25s;
+}
+.modal.show .modalBody{
+	-webkit-transition: opacity 0.25s ease-out 0.25s;
+}
+.modalMenu a
+{
+	/*-webkit-transition: background 0.25s ease-out;*/
+}
+
+

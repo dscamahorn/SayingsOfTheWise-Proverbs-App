@@ -1,0 +1,452 @@
+/* =BASE
+---------------------------------------------------------------------------------------*/
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color:rgb(36,27,44);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color:rgb(114,105,114);
+}
+
+
+/* =FONTS
+---------------------------------------------------------------------------------------*/
+
+/* Rosarivo */
+@font-face {
+    font-family: 'rosarivoregular';
+    src: url('../fonts/rosarivo-regular-webfont.eot');
+    src: url('../fonts/rosarivo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rosarivo-regular-webfont.woff') format('woff'),
+         url('../fonts/rosarivo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/rosarivo-regular-webfont.svg#rosarivoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'rosarivoitalic';
+    src: url('../fonts/rosarivo-italic-webfont.eot');
+    src: url('../fonts/rosarivo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rosarivo-italic-webfont.woff') format('woff'),
+         url('../fonts/rosarivo-italic-webfont.ttf') format('truetype'),
+         url('../fonts/rosarivo-italic-webfont.svg#rosarivoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Cabin */
+@font-face {
+    font-family: 'cabinbold';
+    src: url('../fonts/cabin-bold-webfont.eot');
+    src: url('../fonts/cabin-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-bold-webfont.woff') format('woff'),
+         url('../fonts/cabin-bold-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-bold-webfont.svg#cabinbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cabinbold_italic';
+    src: url('../fonts/cabin-bolditalic-webfont.eot');
+    src: url('../fonts/cabin-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/cabin-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-bolditalic-webfont.svg#cabinbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cabinitalic';
+    src: url('../fonts/cabin-italic-webfont.eot');
+    src: url('../fonts/cabin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-italic-webfont.woff') format('woff'),
+         url('../fonts/cabin-italic-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-italic-webfont.svg#cabinitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cabinmedium';
+    src: url('../fonts/cabin-medium-webfont.eot');
+    src: url('../fonts/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-medium-webfont.woff') format('woff'),
+         url('../fonts/cabin-medium-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-medium-webfont.svg#cabinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cabinmedium_italic';
+    src: url('../fonts/cabin-mediumitalic-webfont.eot');
+    src: url('../fonts/cabin-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/cabin-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-mediumitalic-webfont.svg#cabinmedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cabinregular';
+    src: url('../fonts/cabin-regular-webfont.eot');
+    src: url('../fonts/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-regular-webfont.woff') format('woff'),
+         url('../fonts/cabin-regular-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-regular-webfont.svg#cabinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cabinsemibold';
+    src: url('../fonts/cabin-semibold-webfont.eot');
+    src: url('../fonts/cabin-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-semibold-webfont.woff') format('woff'),
+         url('../fonts/cabin-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-semibold-webfont.svg#cabinsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cabinsemibold_italic';
+    src: url('../fonts/cabin-semibolditalic-webfont.eot');
+    src: url('../fonts/cabin-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin-semibolditalic-webfont.woff') format('woff'),
+         url('../fonts/cabin-semibolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/cabin-semibolditalic-webfont.svg#cabinsemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* =GLOBAL
+---------------------------------------------------------------------------------------*/
+
+html {
+    background:#f2efe4 url(../img/bgTileApp@2x.jpg) repeat;
+    background-size:497px 497px;
+    -moz-box-shadow: inset 0 0 139px rgba(124,112,86,.25); /* inner glow */
+    -webkit-box-shadow: inset 0 0 139px rgba(124,112,86,.25); /* inner glow */
+    box-shadow: inset 0 0 139px rgba(124,112,86,.25); /* inner glow */
+    font-family: "cabinregular";
+}
+
+a {
+    color: #9C4CC1;
+}
+
+a:visited {
+    color: #9C4CC1;
+}
+
+a:hover {
+    color: #9C4CC1;
+}
+
+/* =APP
+---------------------------------------------------------------------------------------*/
+
+/*Main App Container*/
+
+/*Screens*/
+#screenSplash #splashInner h1{
+	font-style:normal;
+	font-weight:400;
+    font-family: "rosarivoregular";
+    color: #c9ab79;
+	text-shadow: 0 1px 1px rgba(172,96,213,.65),0 -1px 1px rgba(55,41,67,0.92);
+}
+#screenSplash #splashInner h1:before{
+	background:transparent url(../img/bgLogo@2x.png) no-repeat 0 -25px;
+	background-size:125px 125px;
+}
+#screenSplash #splashInner h2{
+	text-transform:uppercase;
+	color: #c9ab79;
+	text-shadow: 0 1px 1px rgba(172,96,213,.65),0 -1px 1px rgba(55,41,67,0.92);
+}
+
+/*Passage Screen*/
+#screenPassage #passageBase:before {
+	background: none repeat scroll 0 0 transparent;
+	box-shadow: 0 8px 12px rgba(93, 90, 87, 0.75);
+	transform: skew(-10deg) rotate(-4deg);
+	-webkit-transform: skew(-10deg) rotate(-4deg);
+
+}
+#screenPassage #passageBase:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 9px;
+	box-shadow: 0 8px 12px rgba(93, 90, 87, 0.75);
+	transform: skew(10deg) rotate(4deg);
+	-webkit-transform: skew(10deg) rotate(4deg);
+}
+#screenPassage #passageInner {
+    background:#530B75 url(../img/bgTilePassage@2x.jpg) repeat;
+    background-size:374px 395px;
+	-moz-box-shadow: 0px 0px 12px rgba(93,90,87,.75), 0 0 60px 30px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+	-webkit-box-shadow: 0px 0px 12px rgba(93,90,87,.75), 0 0 60px 30px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+	box-shadow: 0px 0px 12px rgba(93,90,87,.75), 0 0 60px 30px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+}
+#screenPassage #passageText {
+	font-style:normal;
+	font-weight:400;
+    color: #c9ab79;
+	text-shadow: 0 1px 1px rgba(172,96,213,.65), 0 -1px 1px rgba(55,41,67,0.92);
+    font-family: "rosarivoregular";
+}
+#screenPassage #passageID {
+	text-transform:uppercase;
+    color: #c9ab79;
+	text-shadow: 0 1px 1px rgba(172,96,213,.65), 0 -1px 1px rgba(55,41,67,0.92);
+}
+#screenPassage #passageLoad.loading {
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -259px -0px;
+}
+
+#screenPassage #passageLoad.reload{
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -282px -1px;
+}
+
+.no-touch #screenPassage #passageLoad.reload{
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -259px -0px;
+}
+
+.no-touch #screenPassage #passageLoad.reload:hover {
+    background: transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size: 518px 108px;
+    background-position: -259px -54px;
+}
+
+/*Page Screen*/
+#screenPrivacy #privacyInner h1 {
+	font-style:normal;
+	font-weight:400;
+    font-family: "rosarivoregular";
+    color: #c9ab79;
+	text-shadow: 0 1px 1px rgba(172,96,213,.65),0 -1px 1px rgba(55,41,67,0.92);
+}
+#screenPrivacy #privacyBase:before {
+	background: none repeat scroll 0 0 transparent;
+	box-shadow: 0 8px 12px rgba(93, 90, 87, 0.75);
+	transform: skew(-10deg) rotate(-4deg);
+	-webkit-transform: skew(-10deg) rotate(-4deg);
+}
+#screenPrivacy #privacyBase:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 9px;
+	box-shadow: 0 8px 12px rgba(93, 90, 87, 0.75);
+	transform: skew(10deg) rotate(4deg);
+	-webkit-transform: skew(10deg) rotate(4deg);
+}
+#screenPrivacy #privacyInner {
+    background:#530B75 url(../img/bgTilePassage@2x.jpg) repeat;
+    background-size:374px 395px;
+	-moz-box-shadow: 0px 0px 12px rgba(93,90,87,.75), 0 0 60px 30px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+	-webkit-box-shadow: 0px 0px 12px rgba(93,90,87,.75), 0 0 60px 30px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+	box-shadow: 0px 0px 12px rgba(93,90,87,.75), 0 0 60px 30px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+	font-style:normal;
+	font-weight:400;
+    color: #c9ab79;
+	text-shadow: 0 1px 1px rgba(172,96,213,.65), 0 -1px 1px rgba(55,41,67,0.92);
+}
+#screenPrivacy #privacyInner a {
+    color: #9F96A8;
+}
+#screenPrivacy #privacyContent {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+#screenPrivacy #privacyContent #page {
+
+}
+
+/*Favorites Screen*/
+#screenFavorites ul#favorites li > div {
+	background:#f2efe4 url(../img/bgTileApp@2x.jpg) no-repeat;
+    background-size:497px 497px;
+	background-position: right bottom;
+}
+#screenFavorites ul#favorites li div.fav {
+	background:#530B75 url(../img/bgTilePassage@2x.jpg) repeat;
+    background-size:374px 395px;
+	-moz-box-shadow: 2px 2px 4px rgba(93,90,87,.75), 0 0 16px 4px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+	-webkit-box-shadow: 2px 2px 4px rgba(93,90,87,.75), 0 0 16px 4px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */
+	box-shadow: 2px 2px 4px rgba(93,90,87,.75), 0 0 16px 4px rgba(51, 7, 71, 0.5) inset; /* drop shadow and inner glow */ /* 0 0 60px 30px rgba(34, 5, 48, 0.5) inset*/
+    color: #c9ab79;
+    text-shadow: 0 1px 1px rgba(172,96,213,.65), 0 -1px 1px rgba(55,41,67,0.92);
+}
+#screenFavorites ul#favorites li div.placeholder {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border-left: solid 1px rgba(158,151,143,.75);
+	border-top: solid 1px rgba(158,151,143,.75);
+	border-bottom: solid 1px rgba(240,236,232,.75);
+	border-right: solid 1px rgba(240,236,232,.75);
+}
+
+/*Drag n Drop*/
+
+/*Navigation*/
+.star,
+.socialControls,
+.home,
+.delete,
+.info {
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -2px -2px;
+	border:solid 2px rgba(83,11,117,0);
+	-moz-border-radius: 54px;
+	-webkit-border-radius: 54px;
+	border-radius: 54px;
+}
+.no-touch .star:hover,
+.no-touch .socialControls:hover,
+.no-touch .home:hover,
+.no-touch .delete:hover,
+.no-touch .info:hover,
+.touch .star:active,
+.touch .socialControls:active,
+.touch .home:active,
+.touch .delete:active,
+.touch .info:active  {
+	border:solid 2px rgba(83,11,117,1);
+}
+.star {
+	background-position: -56px -2px;
+}
+.socialControls {
+	background-position: -110px -2px;
+}
+.home {
+	background-position: -2px -2px;
+}
+.delete {
+	background-position: -164px -2px;
+}
+.info {
+	background-position: -188px -2px;
+}
+.hit {
+	border:solid 2px rgba(83,11,117,1);
+	background-position: -2px -56px;
+}
+.star.hit,.no-touch .star:hover, .touch .star:active {
+	background-position: -56px -56px;
+}
+.socialControls.hit, .no-touch .socialControls:hover, .touch .socialControls:active {
+	background-position: -110px -56px;
+}
+.home.hit, .no-touch .home:hover, .touch .home:active {
+	background-position: -2px -56px;
+}
+.delete.hit, .no-touch .delete:hover, .touch .delete:active {
+	background-position: -164px -56px;
+}
+.info.hit, .no-touch .info:hover, .touch .info:active {
+	background-position: -188px -56px;
+}
+
+/*Messages*/
+/* This parent can be any width and height - http://css-tricks.com/centering-in-the-unknown/ */
+.modal {
+    background-color: rgba(0,0,0,0.0);
+}
+
+.modal.show {
+	background-color: rgba(0,0,0,0.6);
+}
+
+/* The element to be centered, can also be of any width and height */
+.modalBody {
+    background-color:rgba(55,41,67,0.92);
+	text-transform: uppercase;
+    color:rgb(202,171,121);
+	/* Firefox v3.5+ */
+	-moz-box-shadow:0px 0px 12px 4px rgba(0,0,0,0.51);
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-box-shadow:0px 0px 12px 4px rgba(0,0,0,0.51);
+	/* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+  and by Opera v10.5+ */
+	box-shadow:0px 0px 12px 4px rgba(0,0,0,0.51);
+}
+.modalMessage
+{
+    text-align: left;
+}
+.modalMessage h2
+{
+    text-align: center;
+}
+.modalMessage p
+{
+    text-transform: none;
+}
+.modalMessage .modalShare p {
+	font-style:normal;
+	font-weight:400;
+    font-family: "rosarivoregular";
+}
+.modalMessage a {
+    color: #9F96A8;
+}
+.modalMenu a
+{
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -212px -0px;
+	border-radius: 40px;
+}
+.modalMenu a:hover {
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -212px -54px;
+}
+.modalMenu a.deny {
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -308px -0px;
+}
+.modalMenu a.deny:hover {
+	background:transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size:518px 108px;
+	background-position: -308px -54px;
+}
+.modalMessage div.Agreement
+{
+
+}
+.modalMessage div.Fav
+{
+
+}
+.modalMessage div.Info
+{
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,350 @@
+/* =BASE
+---------------------------------------------------------------------------------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+* {
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: optimizeSpeed;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+}
+/* =FONTS
+---------------------------------------------------------------------------------------*/
+
+/* =GLOBAL
+---------------------------------------------------------------------------------------*/
+
+html {
+    background: #eee;
+    font-size: 14px;
+    line-height: 32px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    margin-bottom: 18px;
+}
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+h1 {
+    font-size: 36px;
+    line-height: 52px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+h3 {
+    margin-bottom: 0;
+}
+i {
+    font-style: italic;
+}
+a, button {
+    cursor: pointer;
+}
+/* =Site
+---------------------------------------------------------------------------------------*/
+
+/*Header*/
+
+header {
+    padding: 42px 32px 42px 32px;
+    text-align: center;
+    background: grey;
+    width: 100%;
+    z-index: 50;
+}
+header div.headerInfo {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+header h1 {
+    text-align: center;
+}
+header p {
+    font-size: 18px;
+    max-width: 440px;
+    margin: 0 auto 24px auto;
+}
+header p cite {
+    font-style: italic;
+    display: block;
+    font-size: 12px;
+    margin-top: 6px;
+}
+header a.button {
+    display: inline-block;
+    background: none;
+    border: solid 2px #666;
+    width: 162px;
+    height: 42px;
+    line-height: 42px;
+    outline: none;
+    margin: 0 4px 12px 4px;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+}
+header a.button:hover {
+    border: solid 2px #999;
+    background: none;
+}
+header a.button:hover a {
+    color: #999;
+}
+/*Body*/
+
+section {
+    /*max-width: 800px;*/
+    margin: 0 auto 0 auto;
+    width: 100%;
+    z-index: 50;
+}
+/*Features*/
+
+section.features {
+    padding: 42px 32px 42px 32px;
+}
+div.featureList {
+    margin: 0 auto 42px auto;
+}
+div.featureList h2 {
+    text-align: center;
+}
+div.featureList li {
+    min-height: 54px;
+    padding: 6px 0px 0px 68px;
+    position: relative;
+    margin-bottom: 18px;
+}
+div.featureList li * {
+    cursor: pointer;
+}
+div.featureList li h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+div.featureList li span {
+    width: 54px;
+    height: 54px;
+    background: purple;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.featureList li p {
+    margin: 0;
+}
+/*Feature Imagery*/
+
+div.featureImagery {
+    background: blue;
+    height: 507px;
+    width: 240px;
+    position: relative;
+    margin: 0 auto;
+}
+div.featureImagery .img {
+    height: 362px;
+    width: 204px;
+    position: absolute;
+    top: 73px;
+    left: 18px;
+}
+/*Privacy*/
+
+section#privacy {
+    margin-bottom: 42px;
+}
+/*Footer*/
+
+footer {
+    background: grey;
+    padding: 42px 32px 42px 32px;
+    width: 100%;
+    z-index: 51;
+}
+footer .info {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+footer .info p {
+    margin-bottom: 9px;
+}
+footer .info ul li {
+    display: inline-block;
+    margin: auto 4px auto 4px;
+}
+footer .info h2 {
+    text-transform: none;
+    margin-bottom: 9px;
+    line-height: normal;
+}
+footer .info h2 span {
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+footer p {}@media only screen and (min-width: 560px) {
+    /* Style adjustments for viewports that meet the condition */
+    /*place the nav on the right and left*/
+    /*Features*/
+    section.features div.flexContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin: 0 auto;
+        max-width: 800px;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -webkit-align-content: flex-start;
+        -webkit-align-items: flex-start;
+    }
+    div.featureList {
+        -webkit-order: 1;
+        -webkit-webkit-flex: 0 1 auto;
+        -webkit-align-self: auto;
+        order: 1;
+        flex: 0 1 auto;
+        align-self: auto;
+        margin: 32px 0 0 18px;
+    }
+    div.featureList h2 {
+        text-align: left;
+    }
+    /*Feature Imagery*/
+    div.featureImagery {
+        -webkit-order: 0;
+        -webkit-flex: 0 0 240px;
+        -webkit-align-self: auto;
+        order: 0;
+        flex: 0 0 240px;
+        align-self: auto;
+        margin: 0;
+        margin-top: 0px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+    /*Header*/
+    header {
+        text-align: left;
+        z-index: 50;
+        height: 500px;
+    }
+    header div.headerInfo {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -webkit-align-content: flex-start;
+        -webkit-align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin: 0 auto;
+        max-width: 800px;
+        max-width: 800px;
+        margin: 0 auto 0 auto;
+    }
+    header div.headerInner {
+        width: 520px;
+        position: relative;
+        height: 416px;
+        -webkit-flex: 0 1 520px;
+        flex: 0 1 520px;
+        margin: 0 0 0 282px;
+    }
+    header h1 {
+        bottom: 42px;
+        position: absolute;
+    }
+    header h1, header p {
+        text-align: left;
+    }
+    header p {
+        font-size: 32px;
+        line-height: 44px;
+        position: absolute;
+        top: 30px;
+    }
+    header p cite {
+        font-style: italic;
+        display: block;
+        font-size: 14px;
+        margin-top: 0;
+    }
+    header a.button {
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 0;
+        left: 166px;
+    }
+    header a.button:first-of-type {
+        margin-left: 0;
+        left: 0px;
+    }
+    /*Features*/
+    section.features div.flexContainer {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -webkit-align-content: flex-start;
+        -webkit-align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    div.featureList {
+        -webkit-flex: 0 1 520px;
+        flex: 0 1 520px;
+        margin: 0 0 0 42px;
+    }
+    div.featureList h2 {
+        text-align: left;
+    }
+    /*Feature Imagery*/
+    div.featureImagery {
+        margin-top: -128px;
+    }
+    /*Footer*/
+    section#privacy {
+        max-width: 800px;
+    }
+}

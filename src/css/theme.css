@@ -1,0 +1,331 @@
+/* =BASE
+---------------------------------------------------------------------------------------*/
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: rgb(36, 27, 44);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgb(114, 105, 114);
+}
+/* =FONTS
+---------------------------------------------------------------------------------------*/
+
+/* Rosarivo */
+
+@font-face {
+    font-family: 'rosarivoregular';
+    src: url('../fonts/rosarivo-regular-webfont.eot');
+    src: url('../fonts/rosarivo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/rosarivo-regular-webfont.woff') format('woff'), url('../fonts/rosarivo-regular-webfont.ttf') format('truetype'), url('../fonts/rosarivo-regular-webfont.svg#rosarivoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rosarivoitalic';
+    src: url('../fonts/rosarivo-italic-webfont.eot');
+    src: url('../fonts/rosarivo-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/rosarivo-italic-webfont.woff') format('woff'), url('../fonts/rosarivo-italic-webfont.ttf') format('truetype'), url('../fonts/rosarivo-italic-webfont.svg#rosarivoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Cabin */
+
+@font-face {
+    font-family: 'cabinbold';
+    src: url('../fonts/cabin-bold-webfont.eot');
+    src: url('../fonts/cabin-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-bold-webfont.woff') format('woff'), url('../fonts/cabin-bold-webfont.ttf') format('truetype'), url('../fonts/cabin-bold-webfont.svg#cabinbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cabinbold_italic';
+    src: url('../fonts/cabin-bolditalic-webfont.eot');
+    src: url('../fonts/cabin-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-bolditalic-webfont.woff') format('woff'), url('../fonts/cabin-bolditalic-webfont.ttf') format('truetype'), url('../fonts/cabin-bolditalic-webfont.svg#cabinbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cabinitalic';
+    src: url('../fonts/cabin-italic-webfont.eot');
+    src: url('../fonts/cabin-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-italic-webfont.woff') format('woff'), url('../fonts/cabin-italic-webfont.ttf') format('truetype'), url('../fonts/cabin-italic-webfont.svg#cabinitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cabinmedium';
+    src: url('../fonts/cabin-medium-webfont.eot');
+    src: url('../fonts/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-medium-webfont.woff') format('woff'), url('../fonts/cabin-medium-webfont.ttf') format('truetype'), url('../fonts/cabin-medium-webfont.svg#cabinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cabinmedium_italic';
+    src: url('../fonts/cabin-mediumitalic-webfont.eot');
+    src: url('../fonts/cabin-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-mediumitalic-webfont.woff') format('woff'), url('../fonts/cabin-mediumitalic-webfont.ttf') format('truetype'), url('../fonts/cabin-mediumitalic-webfont.svg#cabinmedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cabinregular';
+    src: url('../fonts/cabin-regular-webfont.eot');
+    src: url('../fonts/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-regular-webfont.woff') format('woff'), url('../fonts/cabin-regular-webfont.ttf') format('truetype'), url('../fonts/cabin-regular-webfont.svg#cabinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cabinsemibold';
+    src: url('../fonts/cabin-semibold-webfont.eot');
+    src: url('../fonts/cabin-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-semibold-webfont.woff') format('woff'), url('../fonts/cabin-semibold-webfont.ttf') format('truetype'), url('../fonts/cabin-semibold-webfont.svg#cabinsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cabinsemibold_italic';
+    src: url('../fonts/cabin-semibolditalic-webfont.eot');
+    src: url('../fonts/cabin-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cabin-semibolditalic-webfont.woff') format('woff'), url('../fonts/cabin-semibolditalic-webfont.ttf') format('truetype'), url('../fonts/cabin-semibolditalic-webfont.svg#cabinsemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* =GLOBAL
+---------------------------------------------------------------------------------------*/
+
+html {
+    background: #f2efe4;
+    background-color: rgba(68, 55, 78, 1);
+    font-family: "cabinregular";
+}
+body {
+    -moz-box-shadow: inset 0 0 139px rgba(124, 112, 86, .25);
+    /* inner glow */
+    -webkit-box-shadow: inset 0 0 139px rgba(124, 112, 86, .25);
+    /* inner glow */
+    box-shadow: inset 0 0 139px rgba(124, 112, 86, .25);
+    /* inner glow */
+    height: 100%;
+}
+a {
+    color: #9C4CC1;
+}
+a:visited {
+    color: #9C4CC1;
+}
+a:hover {
+    color: #9C4CC1;
+    text-decoration: none;
+}
+h2 {
+    text-transform: uppercase;
+    color: rgba(83, 11, 117, 1);
+}
+h3 {
+    color: rgba(83, 11, 117, 1);
+}
+/* =SITE
+---------------------------------------------------------------------------------------*/
+
+/*Header*/
+
+header {
+    background: #530B75 url(../img/bgTilePassage@2x.jpg) repeat;
+    background-size: 374px 395px;
+    -moz-box-shadow: 0 0 60px 30px rgba(51, 7, 71, 0.5) inset;
+    /* drop shadow and inner glow */
+    -webkit-box-shadow: 0 0 60px 30px rgba(51, 7, 71, 0.5) inset;
+    /* drop shadow and inner glow */
+    box-shadow: 0 0 60px 30px rgba(51, 7, 71, 0.5) inset;
+    /* drop shadow and inner glow */
+}
+header h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "rosarivoregular";
+    color: #c9ab79;
+    text-shadow: 0 1px 1px rgba(172, 96, 213, .65), 0 -1px 1px rgba(55, 41, 67, 0.92);
+}
+header h1 {
+    padding: 75px 0 0 0;
+}
+header h1:before {
+    width: 125px;
+    content: '';
+    position: absolute;
+    height: 75px;
+    top: 35px;
+    left: 50%;
+    margin-left: -63px;
+}
+header p {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "rosarivoregular";
+    color: #c9ab79;
+    text-shadow: 0 1px 1px rgba(172, 96, 213, .65), 0 -1px 1px rgba(55, 41, 67, 0.92);
+}
+header p cite {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "cabinregular";
+    text-transform: uppercase;
+    color: #c9ab79;
+    text-shadow: 0 1px 1px rgba(172, 96, 213, .65), 0 -1px 1px rgba(55, 41, 67, 0.92);
+}
+header h1:before {
+    background: transparent url(../img/bgLogo@2x.png) no-repeat 0 -25px;
+    background-size: 125px 125px;
+}
+header a.button {
+    border: solid 2px #c9ab79;
+    border-image: -webkit-linear-gradient(90deg, rgb(204, 173, 123), rgb(226, 193, 137)) 1 stretch;
+}
+header a.button, header a.button:visited {
+    color: #c9ab79;
+}
+header a.button:hover, header a.button:active {
+    border: solid 2px #c9ab79;
+    border-image: -webkit-linear-gradient(90deg, rgb(204, 173, 123), rgb(226, 193, 137)) 1 stretch;
+    background: #c9ab79;
+    background-image: -webkit-gradient(linear, color-stop(0, rgb(226, 193, 137)), color-stop(1, rgb(204, 173, 123)));
+    background-image: -webkit-linear-gradient(rgb(226, 193, 137) 0%, rgb(204, 173, 123) 100%);
+    background-image: linear-gradient(rgb(226, 193, 137) 0%, rgb(204, 173, 123) 100%);
+}
+header a.button:hover, header a.button:active {
+    color: #530B75;
+}
+/*Body*/
+
+section {
+    color: rgba(55, 41, 67, 1);
+}
+/*Features*/
+
+section.features {
+    background: #f2efe4 url(../img/bgTileApp@2x.jpg) repeat;
+    background-size: 497px 497px;
+}
+div.featureList {} div.featureList h2 {} div.featureList li:hover h3 {
+    color: rgba(83, 11, 117, 1);
+}
+div.featureList li h3 {
+    text-transform: uppercase;
+    font-family: "rosarivoregular";
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), -.5px -1px 1px rgba(255, 255, 255, .8);
+    color: #c9ab79;
+    margin-bottom: -2px;
+}
+div.featureList li.active h3, div.featureList li.active p {
+    color: rgba(83, 11, 117, 1);
+}
+div.featureList li p {} div.featureList li span {
+    background: transparent url(../img/btnBase@2x.png) no-repeat;
+    background-size: 518px 108px;
+    background-position: -2px -2px;
+    border: solid 2px rgba(83, 11, 117, 0);
+    -moz-border-radius: 54px;
+    -webkit-border-radius: 54px;
+    border-radius: 54px;
+}
+div.featureList li.star span {
+    background-position: -56px -2px;
+}
+div.featureList li.socialControls span {
+    background-position: -110px -2px;
+}
+div.featureList li.home span {
+    background-position: -2px -2px;
+}
+div.featureList li.active span {
+    border: solid 2px rgba(83, 11, 117, 1);
+}
+div.featureList li.star.active span {
+    background-position: -56px -56px;
+}
+div.featureList li.socialControls.active span {
+    background-position: -110px -56px;
+}
+div.featureList li.home.active span {
+    background-position: -2px -56px;
+}
+div.featureImagery {
+    background: transparent url(../img/Gold@2x.png) no-repeat;
+    background-size: 240px 507px;
+}
+div.featureImagery div.img.active {
+    opacity: 1;
+}
+div.featureImagery div.imageRead {
+    background: transparent url(../img/bg-feature-image-read.png) no-repeat;
+}
+div.featureImagery div.imageSave {
+    background: transparent url(../img/bg-feature-image-save.png) no-repeat;
+}
+div.featureImagery div.imageShare {
+    background: transparent url(../img/bg-feature-image-share.png) no-repeat;
+}
+div.featureImagery div.imageBase {
+    opacity: 1 !important;
+    background: transparent url(../img/bg-feature-image-default.png) no-repeat;
+}
+div.featureImagery div.img {
+    opacity: 0;
+    image-rendering: -moz-auto;
+    /* Firefox */
+    image-rendering: -webkit-optimize-auto;
+    /* Webkit (non-standard naming) */
+    image-rendering: auto;
+    -ms-interpolation-mode: bicubic;
+    /* IE (non-standard property) */
+    background-size: 204px 362px;
+}
+/*Privacy*/
+
+section#privacy {
+    color: #c9ab79;
+    text-transform: none;
+}
+/*Footer*/
+
+footer {
+    background-color: rgba(68, 55, 78, 1);
+    text-transform: none;
+    color: rgb(202, 171, 121);
+}
+footer .info {} footer h2, footer h3 {
+    color: rgb(202, 171, 121);
+    text-transform: uppercase;
+}
+footer p {}@media only screen and (min-width: 660px) {
+    /* Style adjustments for viewports that meet the condition */
+    /*Header*/
+    header {
+        /*background:#530B75 url(../img/bgTilePassage@2x.jpg) repeat;*/
+        background: #530B75 url(../img/bgKingSolomon.jpg) 50% -200px;
+        background-size: 2400px 900px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+    /*Header*/
+    header {
+        background: #530B75 url(../img/bgKingSolomon.jpg) 50% -100px;
+        background-size: 2400px 900px;
+    }
+    header h1 {
+        padding: 6px 0 0 86px;
+    }
+    header h1:before {
+        width: 125px;
+        content: '';
+        position: absolute;
+        height: 75px;
+        top: 50%;
+        left: 42px;
+        margin-top: -28px;
+        background-size: 98px 98px;
+    }
+}

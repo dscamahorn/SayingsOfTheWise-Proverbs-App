@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="no-js" manifest=".appcache">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Sayings of the Wise: Proverbs</title>
+    <meta name="description" content="Sayings of the Wise: Proverbs app. The Sayings of the Wise application displays random verses from King Solomon's Book of Proverbs, allows for storage of your favorite verses and supports sharing verses through a third-party social network.">
+
+    <!--OG:Required-->
+    <meta property="og:title" content="Sayings of the Wise: Proverbs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/touch/apple-touch-icon-precomposed.png" />
+    <meta property="og:url" content="http://app.sayingsofthewise.com" />
+    <!--OG:Optional-->
+    <meta property="og:description" content="Sayings of the Wise: Proverbs app. The Sayings of the Wise application displays random verses from King Solomon's Book of Proverbs, allows for storage of your favorite verses and supports sharing verses through a third-party social network." />
+    <meta property="og:site_name" content="Sayings of the Wise: Proverbs" />
+    <!--Twitter Card-->
+    <!--
+    <meta name="twitter:card" content="PLACEHOLDER">
+    <meta name="twitter:app:id:iphone" content="id592447445">
+    <meta name="twitter:app:id:ipad" content="432984038404">
+    <meta name="twitter:app:id:googleplay" content="co.vine.android">
+    <meta name="twitter:app:country" content="us">
+    -->
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="img/touch/apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-precomposed.png">
+    <meta name="msapplication-TileColor" content="#530B75">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- For iOS web apps. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="SOTW: Proverbs">
+
+    <!-- build:styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/boilerplate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/behavior.css">
+    <!-- endbuild -->
+
+    <script src="js/vendor/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- build:inc -->
+    <!-- endbuild -->
+
+    <div id="app">
+
+        <div id="modalInfo" class="modal">
+            <div class="modalBody">
+                <div class="modalMessage">
+                </div>
+                <div class="modalMenu">
+                </div>
+            </div>
+        </div>
+
+        <div id="appInner">
+
+            <div id="header">
+            </div>
+
+            <div id="screenSplash" class="appScreen">
+                <div id="splashBase">
+                    <div id="splashInner">
+                        <h1>Sayings of the Wise</h1>
+                        <h2>Proverbs</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="screenPassage" class="appScreen">
+                <div id="passageBase" data-chapter="" data-verse="">
+                    <div id="passageInner">
+                        <div id="passageContent"></div>
+                        <div id="passageLoad" class="loading"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="screenFavorites" class="appScreen">
+                <ul id="favorites">
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                    <li>
+                        <div class="placeholder"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="screenPrivacy" class="appScreen">
+                <div id="privacyBase">
+                    <div id="privacyInner">
+                        <h1>Privacy Policy</h1>
+                        <div id="privacyContent">
+                            <p>This privacy policy governs your use of the mobile software application Sayings of the Wise and the companion website sayingsofthewise.com ("collectively the Application"), created by Douglas Scamahorn. The Application displays random verses from the Book of Proverbs, allows for storage of your favorite verses, which reside solely on your computer, and supports sharing verses through a third-party social network.</p>
+                            <h2>Information we collect</h2>
+                            <p>This Application does not knowingly collect, use or share any personally identifiable information about you or your use of this Application.</p>
+                            <p>This Application uses a third-party tool called Google Analytics to help us understand how users access and use the Application. Google Analytics uses "cookies," which are text files placed on your computer, to collect standard Internet log information and visitor behavior information in an anonymous form. Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove or reject browser cookies. The information generated by the cookie about your use of the Application (including IP address) is transmitted to Google. This information is then used to evaluate visitors' use of the Application and to compile statistical reports on activity. Please review the <a href="http://www.google.com/analytics/learn/privacy.html" target="_blank">Google Analytics privacy policy</a> for additional information.</p>
+                            <p>You are encouraged to review the privacy statements of websites you choose to link to from this Application. We are not responsible for the privacy statements of or content on websites outside of this Application.</p>
+                            <h2>Children under thirteen</h2>
+                            <p>We do not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
+                            <h2>Changes to this policy</h2>
+                            <p>This Privacy Policy may be updated from time to time to for any reason. You are encouraged to periodically review this policy, as continued use is deemed approval of all changes.</p>
+                            <h2>Contact us</h2>
+                            <p>If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at <a href="mailto:info@sayingsofthewise.com?subject=Privacy Policy">info@sayingsofthewise.com</a>.</p>
+                            <p>Last modified: March 25, 2014</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delete">
+            </div>
+
+            <div class="info">
+            </div>
+
+            <div class="home">
+            </div>
+
+            <div class="star">
+            </div>
+
+            <div class="socialControls" data-share-url="">
+            </div>
+
+            <div id="footer">
+            </div>
+
+            <div id="virtualNav">
+                <div id="virtualLinkShareService"></div>
+                <div id="virtualLinkSharePassage"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- build:cordova -->
+    <!-- endbuild -->
+    <!-- build:scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/amplify.store.min.js"></script>
+    <script src="js/vendor/shake.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
