@@ -12,9 +12,7 @@ The Sayings of the Wise application displays random verses from King Solomon's B
 
 ## Dev Roadmap
 
-* [Project Board](https://trello.com/b/fDmZlQSk)
-* [Google PageSpeed Insights: Site](http://goo.gl/oYtSVq)
-* [Google PageSpeed Insights: App](http://goo.gl/RsF9L5)
+* [Project Boards](https://trello.com/sotw)
 
 ## Known Issues
 
@@ -39,12 +37,12 @@ The Sayings of the Wise application displays random verses from King Solomon's B
 * [Normalize](http://necolas.github.io/normalize.css/)
 * [YUI](http://yuilibrary.com/yui/docs/cssreset/)
 
-#### Site Specific
+#### Site
 
 * [Greensock](http://greensock.com/)
 * [ScrollMagic](http://janpaepke.github.io/ScrollMagic/)
 
-#### App Specific
+#### App
 
 * [AmplifyJS](http://amplifyjs.com/)
 * [Shake.js](https://github.com/alexgibson/shake.js)

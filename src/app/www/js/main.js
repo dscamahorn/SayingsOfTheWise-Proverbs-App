@@ -766,8 +766,7 @@ function myAnimator(myElement, myToggleDirection) {
 /* =Modal Markup
 ---------------------------------------------------------------------------------------*/
 
-//wrap the options in a try catch to see if this is running in a cordova app
-var msgAppInfo = "<div class='Info'><h2 class='unicode'>✝</h2><p><span>Returning with increase</span> to the Lord.</p><p>&copy; 2014 Douglas Scamahorn</p><p><a href='privacy.html' onclick='showPrivacyScreen(); return false;'>Privacy Policy</a></p><p><a href='https://github.com/dscamahorn/SayingsOfTheWise-App-Mobile' onclick='openWindow(\"https://github.com/dscamahorn/SayingsOfTheWise-App-Mobile\",\"inbrowser\",false); return false;'>Source &#60;Code&#47;&#62;</a></p><p><a href='https://twitter.com/SayingOfTheWise' onclick='openWindow(\"https://twitter.com/SayingOfTheWise\",\"inbrowser\",false); return false;'>&#64;SayingOfTheWise</a></p></div>";
+var msgAppInfo = "<div class='Info'><h2 class='unicode'>✝</h2><p><span>Returning with increase</span> to the Lord.</p><p>&copy; 2014 Douglas Scamahorn</p><p><a href='privacy.html' onclick='showPrivacyScreen(); return false;'>Privacy Policy</a></p><p><a href='https://github.com/dscamahorn/SayingsOfTheWise-App-Mobile' onclick='openWindow(\"https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App\",\"inbrowser\",false); return false;'>Source &#60;Code&#47;&#62;</a></p><p><a href='https://twitter.com/SayingOfTheWise' onclick='openWindow(\"https://twitter.com/SayingOfTheWise\",\"inbrowser\",false); return false;'>&#64;SayingOfTheWise</a></p></div>";
 var msgFavorites = "<div class='Fav'><h2>Forgivness is Divine</h2><p>Sorry, we can't store any more favorites. Delete a favorite before adding another.</p></div>";
 var msgConfirmShare = "<div class='modalShare'><h2>Share the wisdom?</h2><p></p></div>";
 
