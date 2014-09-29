@@ -135,3 +135,41 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-09-28 21:24:16.468 Sayings of the Wise[36871:547925] Resetting plugins due to page load.
 2014-09-28 21:24:16.468 Sayings of the Wise[36871:547925] IAB.close() called but it was already closed.
 2014-09-28 21:24:16.670 Sayings of the Wise[36871:547925] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/F69AD4CB-510A-493B-A576-801975CB8B75/Sayings%20of%20the%20Wise.app/www/index.html
+2014-09-28 22:49:41.995 Sayings of the Wise[42469:623529] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Data/Application/1EB1CF4F-7592-4D2A-A394-E67125A858D6/Library/Cookies/Cookies.binarycookies
+2014-09-28 22:49:42.060 Sayings of the Wise[42469:623529] Multi-tasking -> Device: YES, App: YES
+2014-09-28 22:49:42.070 Sayings of the Wise[42469:623529] Unlimited access to network resources
+2014-09-28 22:49:42.073 Sayings of the Wise[42469:623529] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-09-28 22:49:42.535 Sayings of the Wise[42469:623529] Resetting plugins due to page load.
+2014-09-28 22:49:42.690 Sayings of the Wise[42469:623529] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/271F4E49-85C3-4385-B2C8-4F3D5ABC1905/Sayings%20of%20the%20Wise.app/www/index.html
+2014-09-28 22:50:19.818 Sayings of the Wise[42469:623529] THREAD WARNING: ['InAppBrowser'] took '61.945068' ms. Plugin should use a background thread.
+2014-09-28 22:53:19.930 Sayings of the Wise[43047:627125] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Data/Application/884FC8EB-C565-460C-9FC3-770927F3C387/Library/Cookies/Cookies.binarycookies
+2014-09-28 22:53:20.014 Sayings of the Wise[43047:627125] Multi-tasking -> Device: YES, App: YES
+2014-09-28 22:53:20.023 Sayings of the Wise[43047:627125] Unlimited access to network resources
+2014-09-28 22:53:20.028 Sayings of the Wise[43047:627125] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-09-28 22:53:20.603 Sayings of the Wise[43047:627125] Resetting plugins due to page load.
+2014-09-28 22:53:20.877 Sayings of the Wise[43047:627125] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/A6E91708-8ABE-47D3-8D01-55CF63A62B60/Sayings%20of%20the%20Wise.app/www/index.html
+2014-09-28 22:57:42.739 Sayings of the Wise[43628:630866] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Data/Application/D5732557-7E2B-49C1-859C-9966F39A82B4/Library/Cookies/Cookies.binarycookies
+2014-09-28 22:57:42.802 Sayings of the Wise[43628:630866] Multi-tasking -> Device: YES, App: YES
+2014-09-28 22:57:42.811 Sayings of the Wise[43628:630866] Unlimited access to network resources
+2014-09-28 22:57:42.814 Sayings of the Wise[43628:630866] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-09-28 22:57:43.225 Sayings of the Wise[43628:630866] Resetting plugins due to page load.
+2014-09-28 22:57:43.553 Sayings of the Wise[43628:630866] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/6E35E1C4-87C2-4188-B91A-592A6EC6C80A/Sayings%20of%20the%20Wise.app/www/index.html
+2014-09-28 23:10:46.059 Sayings of the Wise[43628:638655] Terminating since there is no system app.

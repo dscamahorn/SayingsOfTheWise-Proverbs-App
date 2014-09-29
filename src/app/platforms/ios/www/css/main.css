@@ -264,9 +264,9 @@ html {
 	width: 100%;
 }
 #screenFavorites ul#favorites li {
-	height: 12.5%;
+	height: 12.75%;
 	display: table;
-	padding:0 3px 6px 3px;
+	padding:3px;
 	float:left;
 	background: none;
 	width: 33.333333333333333%;

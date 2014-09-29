@@ -1,14 +1,14 @@
 # humanstxt.org/
 
-# TEAM
+## Team
 
 Doug Scamahorn -- Digital MacGyver -- @dscamahorn
 
-# THANKS
+## Thanks
 
 Father, Son, Holy Ghost
 
-# TECHNOLOGY COLOPHON
+## Technology Colophon
 
 HTML, CSS, JS
 
@@ -16,25 +16,19 @@ HTML, CSS, JS
 
 ### Code
 
-#### Common
-
 * [H5bp Mobile Boilerplate](http://html5boilerplate.com/mobile/)
 * [jQuery](http://jquery.com/)
 * [Modernizr](http://modernizr.com/)
 * [Normalize](http://necolas.github.io/normalize.css/)
 * [YUI](http://yuilibrary.com/yui/docs/cssreset/)
-
-#### Site Specific
-
 * [Greensock](http://greensock.com/)
 * [ScrollMagic](http://janpaepke.github.io/ScrollMagic/)
-
-#### App Specific
-
 * [AmplifyJS](http://amplifyjs.com/)
 * [Shake.js](https://github.com/alexgibson/shake.js)
-* [Cordova]()
-* [PhoneGap]()
+* [Cordova](https://cordova.apache.org/)
+* [PhoneGap](http://phonegap.com/)
+* [Gulp](http://gulpjs.com/)
+* [Node.js](http://nodejs.org/)
 
 ### Typography
 
@@ -44,11 +38,7 @@ HTML, CSS, JS
 ### Bible Source
 
 * [SacredBible.org](http://www.sacredbible.org/)
-
-## Visual Design Resources
-
-* [App Icon Template](http://appicontemplate.com/)
-* [The Dore Gallery of Bible Illustrations, Complete](http://www.gutenberg.org/files/8710/8710-h/images/036.jpg)
+* [The Dore Gallery of Bible Illustrations, Complete: Illustration of Solomon ](http://www.gutenberg.org/files/8710/8710-h/8710-h.htm#link036)
 
 ## License
 
