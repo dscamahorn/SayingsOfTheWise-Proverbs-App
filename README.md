@@ -21,7 +21,7 @@ As of September 2014, the site and webapp have both been designed to run most op
 
 ## Project Boards
 
-* [Develompent Roadmap](https://trello.com/sotw)
+* [Development Roadmap](https://trello.com/sotw)
 * [Known Issues](https://trello.com/b/Lsj83oYf)
 * [Useful Links & Tools](https://trello.com/b/dPupPG8E)
 
