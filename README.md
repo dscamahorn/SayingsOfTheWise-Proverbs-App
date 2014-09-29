@@ -7,14 +7,12 @@ The Sayings of the Wise application displays random verses from King Solomon's B
 This project consists of a promotional website, a webapp that is homescreen capable and a Cordova/PhoneGap build of the webapp.
 
 * Site: [http://sayingsofthewise.com](http://sayingsofthewise.com)
-* Web App: [http://app.sayingsofthewise.com](http://app.sayingsofthewise.com)
+* WebApp: [http://app.sayingsofthewise.com](http://app.sayingsofthewise.com)
 * Mobile App: []()
 * Twitter: [@SayingOfTheWise](http://twitter.com/SayingOfTheWise)
 * Source: [https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App](https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App)
 
 ## System Requirements
-
-### Site & Webapp
 
 As of September 2014, the site and webapp have both been designed to run most optimally on the following targeted Browser/OS combinations:
 
@@ -31,25 +29,19 @@ As of September 2014, the site and webapp have both been designed to run most op
 
 ### Code
 
-#### Common
-
 * [H5bp Mobile Boilerplate](http://html5boilerplate.com/mobile/)
 * [jQuery](http://jquery.com/)
 * [Modernizr](http://modernizr.com/)
 * [Normalize](http://necolas.github.io/normalize.css/)
 * [YUI](http://yuilibrary.com/yui/docs/cssreset/)
-
-#### Site
-
 * [Greensock](http://greensock.com/)
 * [ScrollMagic](http://janpaepke.github.io/ScrollMagic/)
-
-#### App
-
 * [AmplifyJS](http://amplifyjs.com/)
 * [Shake.js](https://github.com/alexgibson/shake.js)
 * [Cordova](https://cordova.apache.org/)
 * [PhoneGap](http://phonegap.com/)
+* [Gulp](http://gulpjs.com/)
+* [Node.js](http://nodejs.org/)
 
 ### Typography
 
