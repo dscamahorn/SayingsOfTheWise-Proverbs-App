@@ -14,11 +14,7 @@ function showModal(modal, message, menu) {
         $(".modal .modalShare p").html("<span>#Proverbs</span> " + targetChapterVerse);
 
         $(".modal .modalMenu a.confirm").on("click", function() {
-            if (navigator.standalone === true) {
-                openWindow(lookupShareURL(), "inbrowser", true, 640, 480);
-            } else {
-                openWindow(lookupShareURL(), "inapp", true, 640, 480);
-            }
+            openWindow(lookupShareURL(), "inapp", true, 640, 480);
             hideModal();
             return false;
         });
@@ -482,20 +478,20 @@ function updateFavList() {
     items.sort(function(a, b) {
 
         /*
-			1.if the function returns less than zero, sort a before b
-			2.if the function returns greater than zero, sort b before a
-			3.if the function returns zero, leave a and b unchanged with respect to each other
-			*/
+            1.if the function returns less than zero, sort a before b
+            2.if the function returns greater than zero, sort b before a
+            3.if the function returns zero, leave a and b unchanged with respect to each other
+            */
 
         /* Stable Sort
-			IE6+: stable
-			Firefox < 3: unstable
-			Firefox >= 3: stable
-			Chrome <= 5 (i.e., all versions to date): unstable
-			Opera < 10: unstable
-			Opera >= 10: stable
-			Safari 4: stable
-			*/
+            IE6+: stable
+            Firefox < 3: unstable
+            Firefox >= 3: stable
+            Chrome <= 5 (i.e., all versions to date): unstable
+            Opera < 10: unstable
+            Opera >= 10: stable
+            Safari 4: stable
+            */
 
         var x = a.indexOf("placeholder");
         var y = b.indexOf("placeholder");
@@ -558,13 +554,14 @@ function sharePassage(proverb) {
 
     assignVirtualLinkTrigger("#virtualLinkSharePassage", shareTwitterURL);
 
-    /*
-		if (navigator.standalone === true) {
-			$("#virtualLinkSharePassage").trigger('click');
-		} else {
-		*/
-    showModal("confirmShare", msgConfirmShare, "<a href='#' class='confirm'>OK</a><a href='#' class='deny'>Cancel</a>");
-    //}
+
+    if (navigator.standalone === true) {
+        alert("sharemed");
+        $("#virtualLinkSharePassage").trigger('click');
+    } else {
+
+        showModal("confirmShare", msgConfirmShare, "<a href='#' class='confirm'>OK</a><a href='#' class='deny'>Cancel</a>");
+    }
 
 }
 
@@ -608,8 +605,11 @@ function assignVirtualLinkTrigger(virtualLinkID, virtualLinkURL) {
 
         var a = document.createElement('a');
         a.setAttribute("href", virtualLinkURL);
-        a.setAttribute("target", "_system");
-        //a.setAttribute("target", "_top");
+        if (navigator.standalone === true) {
+            a.setAttribute("target", "_top");
+        } else {
+            a.setAttribute("target", "_system");
+        }
         var dispatch = document.createEvent("HTMLEvents");
         dispatch.initEvent("click", true, true);
         a.dispatchEvent(dispatch);
@@ -638,14 +638,13 @@ function initNav() {
     assignVirtualLinkTrigger("#virtualLinkShareService", "http://twitter.com/SayingOfTheWise");
 
     $('.socialControls').on('click', function() {
-        /*
-			if (navigator.standalone === true) {
-				$("#virtualLinkShareService").trigger('click');
-			} else {
-			*/
-        openWindow("http://twitter.com/SayingOfTheWise", "inbrowser", false);
-        //window.open("http://twitter.com/SayingOfTheWise");
-        //}
+
+        if (navigator.standalone === true) {
+            $("#virtualLinkShareService").trigger('click');
+        } else {
+            openWindow("http://twitter.com/SayingOfTheWise", "inbrowser", false);
+            //window.open("http://twitter.com/SayingOfTheWise");
+        }
     });
 
     //Fav
@@ -766,7 +765,11 @@ function myAnimator(myElement, myToggleDirection) {
 /* =Modal Markup
 ---------------------------------------------------------------------------------------*/
 
-var msgAppInfo = "<div class='Info'><h2 class='unicode'>✝</h2><p><span>Returning with increase</span> to the Lord.</p><p>&copy; 2014 Douglas Scamahorn</p><p><a href='privacy.html' onclick='showPrivacyScreen(); return false;'>Privacy Policy</a></p><p><a href='https://github.com/dscamahorn/SayingsOfTheWise-App-Mobile' onclick='openWindow(\"https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App\",\"inbrowser\",false); return false;'>Source &#60;Code&#47;&#62;</a></p><p><a href='https://twitter.com/SayingOfTheWise' onclick='openWindow(\"https://twitter.com/SayingOfTheWise\",\"inbrowser\",false); return false;'>&#64;SayingOfTheWise</a></p></div>";
+if (navigator.standalone === true) {
+    var msgAppInfo = "<div class='Info'><h2 class='unicode'>✝</h2><p><span>Returning with increase</span> to the Lord.</p><p>&copy; 2014 Douglas Scamahorn</p><p><a href='privacy.html' onclick='showPrivacyScreen(); return false;'>Privacy Policy</a></p><p><a href='https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App' target='_blank'>Source &#60;Code&#47;&#62;</a></p><p><a href='https://twitter.com/SayingOfTheWise' target='_blank'>&#64;SayingOfTheWise</a></p></div>";
+} else {
+    var msgAppInfo = "<div class='Info'><h2 class='unicode'>✝</h2><p><span>Returning with increase</span> to the Lord.</p><p>&copy; 2014 Douglas Scamahorn</p><p><a href='privacy.html' onclick='showPrivacyScreen(); return false;'>Privacy Policy</a></p><p><a href='https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App' onclick='openWindow(\"https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App\",\"inbrowser\",false); return false;'>Source &#60;Code&#47;&#62;</a></p><p><a href='https://twitter.com/SayingOfTheWise' onclick='openWindow(\"https://twitter.com/SayingOfTheWise\",\"inbrowser\",false); return false;'>&#64;SayingOfTheWise</a></p></div>";
+}
 var msgFavorites = "<div class='Fav'><h2>Forgivness is Divine</h2><p>Sorry, we can't store any more favorites. Delete a favorite before adding another.</p></div>";
 var msgConfirmShare = "<div class='modalShare'><h2>Share the wisdom?</h2><p></p></div>";
 

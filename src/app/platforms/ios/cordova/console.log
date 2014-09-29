@@ -126,3 +126,12 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-09-28 18:34:37.532 Sayings of the Wise[36871:547925] Resetting plugins due to page load.
 2014-09-28 18:34:37.762 Sayings of the Wise[36871:547925] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/F69AD4CB-510A-493B-A576-801975CB8B75/Sayings%20of%20the%20Wise.app/www/index.html
 2014-09-28 18:34:43.660 Sayings of the Wise[36871:547925] THREAD WARNING: ['InAppBrowser'] took '40.219971' ms. Plugin should use a background thread.
+2014-09-28 21:23:50.831 Sayings of the Wise[36871:547925] Resetting plugins due to page load.
+2014-09-28 21:23:50.833 Sayings of the Wise[36871:547925] IAB.close() called but it was already closed.
+2014-09-28 21:23:51.004 Sayings of the Wise[36871:547925] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/F69AD4CB-510A-493B-A576-801975CB8B75/Sayings%20of%20the%20Wise.app/www/index.html
+2014-09-28 21:24:09.644 Sayings of the Wise[36871:547925] Resetting plugins due to page load.
+2014-09-28 21:24:09.645 Sayings of the Wise[36871:547925] IAB.close() called but it was already closed.
+2014-09-28 21:24:09.847 Sayings of the Wise[36871:547925] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/F69AD4CB-510A-493B-A576-801975CB8B75/Sayings%20of%20the%20Wise.app/www/index.html
+2014-09-28 21:24:16.468 Sayings of the Wise[36871:547925] Resetting plugins due to page load.
+2014-09-28 21:24:16.468 Sayings of the Wise[36871:547925] IAB.close() called but it was already closed.
+2014-09-28 21:24:16.670 Sayings of the Wise[36871:547925] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/F69AD4CB-510A-493B-A576-801975CB8B75/Sayings%20of%20the%20Wise.app/www/index.html
