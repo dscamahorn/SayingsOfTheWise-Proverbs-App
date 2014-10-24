@@ -1,12 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.sayingsofthewise.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.sayingsofthewise.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Sayings of the Wise</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Sayings of the Wise: Proverbs app. The Sayings of the Wise application displays random verses from King Solomon's Book of Proverbs, allows for storage of your favorite verses and supports sharing verses through a third-party social network.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="info@sayingsofthewise.com" href="http://sayingsofthewise.com">
+        Doug Scamahorn
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <platform name="ios">
+              <!-- iOS 8.0+ -->
+              <!-- iPhone 6 Plus  -->
+              <icon src="www/img/touch/icon-60@3x.png" width="180" height="180" />
+              <!-- iOS 7.0+ -->
+              <!-- iPhone / iPod Touch  -->
+              <!-- <icon src="www/img/touch/icon-60.png" width="60" height="60" /> -->
+              <icon src="www/img/touch/icon-60@2x.png" width="120" height="120" />
+              <!-- iPad -->
+              <icon src="www/img/touch/icon-76.png" width="76" height="76" />
+              <icon src="www/img/touch/icon-76@2x.png" width="152" height="152" />
+              <!-- iOS 6.1 -->
+              <!-- Spotlight Icon -->
+              <icon src="www/img/touch/icon-small-40.png" width="40" height="40" />
+              <icon src="www/img/touch/icon-small-40@2x.png" width="80" height="80" />
+              <!-- iPhone / iPod Touch -->
+              <icon src="www/img/touch/icon.png" width="57" height="57" />
+              <icon src="www/img/touch/icon@2x.png" width="114" height="114" />
+              <!-- iPad -->
+              <icon src="www/img/touch/icon-72.png" width="72" height="72" />
+              <icon src="www/img/touch/icon-72@2x.png" width="144" height="144" />
+              <!-- iPhone Spotlight and Settings Icon -->
+              <icon src="www/img/touch/icon-small.png" width="29" height="29" />
+              <icon src="www/img/touch/icon-small@2x.png" width="58" height="58" />
+              <icon src="www/img/touch/icon-small@3x.png" width="87" height="87" />
+              <!-- iPad Spotlight and Settings Icon -->
+              <icon src="www/img/touch/icon-small-50.png" width="50" height="50" />
+              <icon src="www/img/touch/icon-small-50@2x.png" width="100" height="100" />
+     </platform>
 </widget>
