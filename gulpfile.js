@@ -67,6 +67,8 @@ gulp.task('prepDist', function() {
     //app
     gulp.src([srcapp + 'img/*'])
         .pipe(gulp.dest(distapp + 'img'));
+    gulp.src([srcapp + 'img/touch/*'])
+        .pipe(gulp.dest(distapp + 'img/touch'));
     gulp.src([srcapp + 'fonts/*'])
         .pipe(gulp.dest(distapp + 'fonts'));
     gulp.src([srcapp + 'js/vendor/modernizr.min.js'])
@@ -86,6 +88,8 @@ gulp.task('prepDist', function() {
     //site
     gulp.src([srcsite + 'img/*'])
         .pipe(gulp.dest(distsite + 'img'));
+    gulp.src([srcsite + 'img/touch/*'])
+        .pipe(gulp.dest(distsite + 'img/touch'));
     gulp.src([srcsite + 'fonts/*'])
         .pipe(gulp.dest(distsite + 'fonts'));
     gulp.src([srcsite + 'js/vendor/modernizr.min.js'])
