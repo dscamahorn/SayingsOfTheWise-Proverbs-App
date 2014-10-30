@@ -226,16 +226,10 @@ a:hover {
 #screenPassage #passageLoad.reload{
 	background:transparent url(../img/btnBase@2x.png) no-repeat;
     background-size:518px 108px;
-	background-position: -282px -1px;
-}
-
-.no-touch #screenPassage #passageLoad.reload{
-	background:transparent url(../img/btnBase@2x.png) no-repeat;
-    background-size:518px 108px;
 	background-position: -259px -0px;
 }
 
-.no-touch #screenPassage #passageLoad.reload:hover {
+#screenPassage #passageLoad.reload:hover {
     background: transparent url(../img/btnBase@2x.png) no-repeat;
     background-size: 518px 108px;
     background-position: -259px -54px;
