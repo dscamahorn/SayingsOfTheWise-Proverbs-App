@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE8075EB-3EF1-4BB5-89A0-B2D272FCCE85</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Sayings of the Wise</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>68C20C9EB020B16B550D0EA6E53D2E7F2B5C915E</key>
+		<string>https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>src/app/platforms/ios/Sayings of the Wise.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>68C20C9EB020B16B550D0EA6E53D2E7F2B5C915E</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>68C20C9EB020B16B550D0EA6E53D2E7F2B5C915E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>68C20C9EB020B16B550D0EA6E53D2E7F2B5C915E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SOTW</string>
+		</dict>
+	</array>
+</dict>
+</plist>

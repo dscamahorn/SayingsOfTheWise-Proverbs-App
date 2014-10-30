@@ -114,3 +114,71 @@ https://developer.apple.com/icloud/documentation/data-storage/
 2014-10-24 17:09:55.447 Sayings of the Wise[9741:321174] Resetting plugins due to page load.
 2014-10-24 17:09:55.720 Sayings of the Wise[9741:321174] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/FD7CE46A-99FC-4460-9617-3E8EC37F6C59/Sayings%20of%20the%20Wise.app/www/index.html
 2014-10-24 17:10:00.333 Sayings of the Wise[9741:321174] THREAD WARNING: ['InAppBrowser'] took '36.573242' ms. Plugin should use a background thread.
+2014-10-29 22:13:31.524 Sayings of the Wise[4992:91939] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Data/Application/DF237BA4-74CE-44A2-AECD-4BED69B74DD2/Library/Cookies/Cookies.binarycookies
+2014-10-29 22:13:31.570 Sayings of the Wise[4992:91939] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-29 22:13:31.570 Sayings of the Wise[4992:91939] Multi-tasking -> Device: YES, App: YES
+2014-10-29 22:13:31.590 Sayings of the Wise[4992:91939] Unlimited access to network resources
+2014-10-29 22:13:31.595 Sayings of the Wise[4992:91939] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-29 22:13:32.008 Sayings of the Wise[4992:91939] Resetting plugins due to page load.
+2014-10-29 22:13:32.413 Sayings of the Wise[4992:91939] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/9BF2E095-19EF-4F66-B70E-F5D39C858C38/Sayings%20of%20the%20Wise.app/www/index.html
+2014-10-29 22:14:00.266 Sayings of the Wise[4992:91939] THREAD WARNING: ['InAppBrowser'] took '53.122070' ms. Plugin should use a background thread.
+2014-10-29 22:28:27.640 Sayings of the Wise[4992:97231] Terminating since there is no system app.
+2014-10-29 22:28:33.574 Sayings of the Wise[5281:97600] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/B7F53F39-D319-4D09-8BCA-EE8613903D8E/data/Containers/Data/Application/13A4CCC2-4570-4AEC-8849-2E3C38F4F3D1/Library/Cookies/Cookies.binarycookies
+2014-10-29 22:28:33.638 Sayings of the Wise[5281:97600] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-29 22:28:33.638 Sayings of the Wise[5281:97600] Multi-tasking -> Device: YES, App: YES
+2014-10-29 22:28:33.647 Sayings of the Wise[5281:97600] Unlimited access to network resources
+2014-10-29 22:28:33.650 Sayings of the Wise[5281:97600] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-29 22:28:34.311 Sayings of the Wise[5281:97600] Resetting plugins due to page load.
+2014-10-29 22:28:34.532 Sayings of the Wise[5281:97600] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/B7F53F39-D319-4D09-8BCA-EE8613903D8E/data/Containers/Bundle/Application/76AE3123-DF9F-4090-B824-5113A4A8C525/Sayings%20of%20the%20Wise.app/www/index.html
+2014-10-29 22:29:14.472 Sayings of the Wise[5281:98495] Terminating since there is no system app.
+2014-10-29 22:29:19.769 Sayings of the Wise[5503:98879] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Data/Application/A88EAD80-935F-45A5-A5AD-2560963FD654/Library/Cookies/Cookies.binarycookies
+2014-10-29 22:29:19.837 Sayings of the Wise[5503:98879] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-29 22:29:19.838 Sayings of the Wise[5503:98879] Multi-tasking -> Device: YES, App: YES
+2014-10-29 22:29:19.845 Sayings of the Wise[5503:98879] Unlimited access to network resources
+2014-10-29 22:29:19.848 Sayings of the Wise[5503:98879] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-29 22:29:20.002 Sayings of the Wise[5503:98879] Resetting plugins due to page load.
+2014-10-29 22:29:20.237 Sayings of the Wise[5503:98879] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/B8533946-3A09-4D39-B555-2C733012CD93/Sayings%20of%20the%20Wise.app/www/index.html
+2014-10-29 22:51:07.712 Sayings of the Wise[5850:107604] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Data/Application/94199E9C-E8C2-4EE5-B0D2-ACAB27D35C6A/Library/Cookies/Cookies.binarycookies
+2014-10-29 22:51:07.783 Sayings of the Wise[5850:107604] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-29 22:51:07.784 Sayings of the Wise[5850:107604] Multi-tasking -> Device: YES, App: YES
+2014-10-29 22:51:07.792 Sayings of the Wise[5850:107604] Unlimited access to network resources
+2014-10-29 22:51:07.794 Sayings of the Wise[5850:107604] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-29 22:51:08.018 Sayings of the Wise[5850:107604] Resetting plugins due to page load.
+2014-10-29 22:51:08.297 Sayings of the Wise[5850:107604] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/AA44EA35-6FFA-4F38-A9CE-C533D4F018DD/Sayings%20of%20the%20Wise.app/www/index.html
+2014-10-29 22:58:07.942 Sayings of the Wise[6381:112813] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Data/Application/D55FED0A-9DB6-4FA2-96A8-132A35862598/Library/Cookies/Cookies.binarycookies
+2014-10-29 22:58:08.010 Sayings of the Wise[6381:112813] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-29 22:58:08.010 Sayings of the Wise[6381:112813] Multi-tasking -> Device: YES, App: YES
+2014-10-29 22:58:08.017 Sayings of the Wise[6381:112813] Unlimited access to network resources
+2014-10-29 22:58:08.020 Sayings of the Wise[6381:112813] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-29 22:58:08.176 Sayings of the Wise[6381:112813] Resetting plugins due to page load.
+2014-10-29 22:58:08.428 Sayings of the Wise[6381:112813] Finished load of: file:///Users/dbs/Library/Developer/CoreSimulator/Devices/A67BDC83-B67E-4431-BF49-5592B7DCA7D7/data/Containers/Bundle/Application/36CFC9CE-331F-4A91-AA89-C2AC360431F8/Sayings%20of%20the%20Wise.app/www/index.html

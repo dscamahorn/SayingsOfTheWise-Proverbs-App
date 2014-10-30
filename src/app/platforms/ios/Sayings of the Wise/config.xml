@@ -23,11 +23,13 @@
         <param name="ios-package" value="CDVInAppBrowser" />
     </feature>
     <icon height="180" src="www/img/touch/icon-60@3x.png" width="180" />
+    <icon height="60" src="www/img/touch/icon-60.png" width="60" />
     <icon height="120" src="www/img/touch/icon-60@2x.png" width="120" />
     <icon height="76" src="www/img/touch/icon-76.png" width="76" />
     <icon height="152" src="www/img/touch/icon-76@2x.png" width="152" />
     <icon height="40" src="www/img/touch/icon-small-40.png" width="40" />
     <icon height="80" src="www/img/touch/icon-small-40@2x.png" width="80" />
+    <icon height="120" src="www/img/touch/icon-small-40@3x.png" width="120" />
     <icon height="57" src="www/img/touch/icon.png" width="57" />
     <icon height="114" src="www/img/touch/icon@2x.png" width="114" />
     <icon height="72" src="www/img/touch/icon-72.png" width="72" />
