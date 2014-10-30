@@ -22,6 +22,13 @@
     <feature name="InAppBrowser">
         <param name="ios-package" value="CDVInAppBrowser" />
     </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
     <icon height="180" src="www/img/touch/icon-60@3x.png" width="180" />
     <icon height="60" src="www/img/touch/icon-60.png" width="60" />
     <icon height="120" src="www/img/touch/icon-60@2x.png" width="120" />
