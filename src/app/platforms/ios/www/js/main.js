@@ -545,10 +545,7 @@ function buildFavList() {
 
 function sharePassage(proverb) {
 
-    //var shareTwitterURL = document.location.protocol + "//twitter.com/intent/tweet?text=" + encodeURIComponent(proverb) + "&related=SayingOfTheWise";
-
-    var shareTwitterURL = "http://twitter.com/intent/tweet?text=" + encodeURIComponent(proverb) + "&related=SayingOfTheWise";
-
+    var shareTwitterURL = "https:" + "//twitter.com/intent/tweet?text=" + encodeURIComponent(proverb) + "&related=SayingOfTheWise";
 
     //Set the data attribute so it can be retrieved by the lookupShareURL function.
     $(".socialControls").attr("data-share-url", shareTwitterURL);

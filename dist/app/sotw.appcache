@@ -1,13 +1,8 @@
 CACHE MANIFEST
-# 2014.05.04.927
+# 2014.10.30
 
 #CSS
-css/behavior.css
-css/boilerplate.css
-css/main.css
-css/normalize.css
-css/reset.css
-css/theme.css
+css/styles.css
 
 #FONTS
 fonts/cabin-bold-webfont.eot
@@ -52,26 +47,18 @@ fonts/rosarivo-regular-webfont.ttf
 fonts/rosarivo-regular-webfont.woff
 
 #IMG
-img/startup/startup.png
-img/startup/startup-retina.png
-img/startup/startup-tablet-landscape.png
-img/startup/startup-tablet-landscape-retina.png
-img/startup/startup-tablet-portrait.png
-img/startup/startup-tablet-portrait-retina.png
-img/touch/apple-touch-icon-precomposed.png
+img/touch/icon-76.png
+img/touch/icon-60@2x.png
+img/touch/icon-76@2x.png
+img/touch/icon-60@3x.png
 img/bgLogo@2x.png
 img/bgTileApp@2x.jpg
 img/bgTilePassage@2x.jpg
 img/btnBase@2x.png
 
 #JS
-js/vendor/amplify.store.min.js
-js/vendor/jquery.min.js
 js/vendor/modernizr.min.js
-js/vendor/shake.js
-js/helper.js
-js/main.js
-js/plugins.js
+js/scripts.js
 
 #ROOT
 index.html
