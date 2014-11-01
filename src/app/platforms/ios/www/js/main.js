@@ -273,6 +273,7 @@ $.fn.draggable = function(direction, boundingBox) {
             //Hide/Show
             $("#screenPassage").show();
             $(".home").hide();
+            $(".info").show();
 
             $(".star").show();
             $("#screenFavorites").hide();
