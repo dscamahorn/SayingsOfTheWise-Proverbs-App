@@ -51,6 +51,16 @@ img/touch/icon-76.png
 img/touch/icon-60@2x.png
 img/touch/icon-76@2x.png
 img/touch/icon-60@3x.png
+img/startup/default-iphone.png
+img/startup/default@2x-iphone.png
+img/startup/default-portrait-ipad.png
+img/startup/default-portrait@2x-ipad.png
+img/startup/default-landscape-ipad.png
+img/startup/default-landscape@2x-ipad.png
+img/startup/default-568h@2x-iphone.png
+img/startup/default-667h.png
+img/startup/default-736h.png
+img/startup/default-landscape-736h.png
 img/bgLogo@2x.png
 img/bgTileApp@2x.jpg
 img/bgTilePassage@2x.jpg

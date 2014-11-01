@@ -556,10 +556,8 @@ function sharePassage(proverb) {
 
 
     if (navigator.standalone === true) {
-        alert("sharemed");
         $("#virtualLinkSharePassage").trigger('click');
     } else {
-
         showModal("confirmShare", msgConfirmShare, "<a href='#' class='confirm'>OK</a><a href='#' class='deny'>Cancel</a>");
     }
 

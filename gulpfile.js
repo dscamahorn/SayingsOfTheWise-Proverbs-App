@@ -69,6 +69,8 @@ gulp.task('prepDist', function() {
         .pipe(gulp.dest(distapp + 'img'));
     gulp.src([srcapp + 'img/touch/*'])
         .pipe(gulp.dest(distapp + 'img/touch'));
+    gulp.src([srcapp + 'img/startup/*'])
+        .pipe(gulp.dest(distapp + 'img/startup'));
     gulp.src([srcapp + 'fonts/*'])
         .pipe(gulp.dest(distapp + 'fonts'));
     gulp.src([srcapp + 'js/vendor/modernizr.min.js'])

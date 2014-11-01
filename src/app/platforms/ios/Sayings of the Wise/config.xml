@@ -25,10 +25,9 @@
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
-    <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarStyle" value="lightcontent" />
-    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="default" />
     <icon height="180" src="www/img/touch/icon-60@3x.png" width="180" />
     <icon height="60" src="www/img/touch/icon-60.png" width="60" />
     <icon height="120" src="www/img/touch/icon-60@2x.png" width="120" />
@@ -46,6 +45,16 @@
     <icon height="87" src="www/img/touch/icon-small@3x.png" width="87" />
     <icon height="50" src="www/img/touch/icon-small-50.png" width="50" />
     <icon height="100" src="www/img/touch/icon-small-50@2x.png" width="100" />
+    <splash height="480" src="www/img/startup/default-iphone.png" width="320" />
+    <splash height="960" src="www/img/startup/default@2x-iphone.png" width="640" />
+    <splash height="1024" src="www/img/startup/default-portrait-ipad.png" width="768" />
+    <splash height="2048" src="www/img/startup/default-portrait@2x-ipad.png" width="1536" />
+    <splash height="768" src="www/img/startup/default-landscape-ipad.png" width="1024" />
+    <splash height="1536" src="www/img/startup/default-landscape@2x-ipad.png" width="2048" />
+    <splash height="1136" src="www/img/startup/default-568h@2x-iphone.png" width="640" />
+    <splash height="1334" src="www/img/startup/default-667h.png" width="750" />
+    <splash height="2208" src="www/img/startup/default-736h.png" width="1242" />
+    <splash height="1242" src="www/img/startup/default-landscape-736h.png" width="2208" />
     <name>Sayings of the Wise</name>
     <description>
         Sayings of the Wise: Proverbs app. The Sayings of the Wise application displays random verses from King Solomon's Book of Proverbs, allows for storage of your favorite verses and supports sharing verses through a third-party social network.

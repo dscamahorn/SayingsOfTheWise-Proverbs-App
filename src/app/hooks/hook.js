@@ -61,23 +61,36 @@ var filestocopy = [
 {
     "img/touch/itunesartwork@2x.png": "platforms/ios/Sayings of the Wise/Resources/icons/itunesartwork@2x.png"
 },
-/*
 {
-    "assets/ios/Resources/splash/Default@2x~iphone.png": "platforms/ios/Sayings of the Wise/Resources/splash/Default@2x~iphone.png"
+    "img/startup/default-568h@2x-iphone.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-568h@2x-iphone.png"
 },
 {
-    "assets/ios/Resources/splash/Default-568h@2x~iphone.png": "platforms/ios/Sayings of the Wise/Resources/splash/Default-568h@2x~iphone.png"
+    "img/startup/default-landscape@2x-ipad.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-landscape@2x-ipad.png"
 },
 {
-    "assets/ios/Resources/splash/Default~iphone.png": "platforms/ios/Sayings of the Wise/Resources/splash/Default~iphone.png"
+    "img/startup/default-landscape-ipad.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-landscape-ipad.png"
 },
 {
-    "assets/ios/Resources/splash/Default-Portrait~ipad.png": "platforms/ios/Sayings of the Wise/Resources/splash/Default-Portrait~ipad.png"
+    "img/startup/default-portrait@2x-ipad.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-portrait@2x-ipad.png"
 },
 {
-    "assets/ios/Resources/splash/Default-Portrait@2x~ipad.png": "platforms/ios/Sayings of the Wise/Resources/splash/Default-Portrait@2x~ipad.png"
+    "img/startup/default-portrait-ipad.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-portrait-ipad.png"
 },
-*/
+{
+    "img/startup/default@2x-iphone.png": "platforms/ios/Sayings of the Wise/Resources/splash/default@2x-iphone.png"
+},
+{
+    "img/startup/default-iphone.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-iphone.png"
+},
+{
+    "img/startup/default-667h.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-667h.png"
+},
+{
+    "img/startup/default-736h.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-736h.png"
+},
+{
+    "img/startup/default-landscape-736h.png": "platforms/ios/Sayings of the Wise/Resources/splash/default-landscape-736h.png"
+},
 ];
 
 
