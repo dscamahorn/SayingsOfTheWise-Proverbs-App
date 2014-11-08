@@ -1,3 +1,19 @@
 == HEAD
 
-* Prep for beta release
+## App
+
+* implemented MBP.helpers for app (fastButton on nav items, active globaly)
+
+##Site
+
+*
+
+==1.0.0
+
+## App
+
+* initial release
+
+##Site
+
+* initial release
