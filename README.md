@@ -4,11 +4,11 @@
 
 The Sayings of the Wise application displays random verses from King Solomon's Book of Proverbs, allows for storage of your favorite verses and supports sharing verses through a third-party social network.
 
-This project consists of a promotional website, a webapp that is homescreen capable and a Cordova/PhoneGap build of the webapp.
+This project consists of a promotional website, a webapp that is homescreen capable and a Cordova/PhoneGap build of the webapp for iOS.
 
 * Site: [SayingsOfTheWise.com](http://sayingsofthewise.com)
 * Web App: [App.SayingsOfTheWise.com](http://app.sayingsofthewise.com)
-* Mobile App: [App Store](https://itunes.apple.com/us/app/sayings-of-the-wise-proverbs/id936245285?ls=1&mt=8)
+* iOS Mobile App: [App Store](https://itunes.apple.com/us/app/sayings-of-the-wise-proverbs/id936245285?ls=1&mt=8)
 * Twitter: [@SayingOfTheWise](http://twitter.com/SayingOfTheWise)
 * Source: [Github](https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App)
 
