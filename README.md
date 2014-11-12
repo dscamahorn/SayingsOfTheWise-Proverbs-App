@@ -6,11 +6,11 @@ The Sayings of the Wise application displays random verses from King Solomon's B
 
 This project consists of a promotional website, a webapp that is homescreen capable and a Cordova/PhoneGap build of the webapp.
 
-* Site: [http://sayingsofthewise.com](http://sayingsofthewise.com)
-* WebApp: [http://app.sayingsofthewise.com](http://app.sayingsofthewise.com)
-* Mobile App: []()
-* Twitter: [@SayingOfTheWise](http://twitter.com/SayingOfTheWise)
-* Source: [https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App](https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App)
+* [Site: SayingsOfTheWise.com](http://sayingsofthewise.com)
+* [WebApp: App.SayingsOfTheWise.com](http://app.sayingsofthewise.com)
+* [Mobile App: App Store](https://itunes.apple.com/us/app/sayings-of-the-wise-proverbs/id936245285?ls=1&mt=8)
+* [Twitter: @SayingOfTheWise](http://twitter.com/SayingOfTheWise)
+* [Source: Github](https://github.com/dscamahorn/SayingsOfTheWise-Proverbs-App)
 
 ## System Requirements
 
