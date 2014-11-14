@@ -1,5 +1,7 @@
 CACHE MANIFEST
-# 2014.11.02
+# 2014.11.13
+
+CACHE:
 
 #CSS
 css/styles.css
@@ -73,3 +75,6 @@ js/scripts.js
 #ROOT
 index.html
 proverbs.json
+
+NETWORK:
+*
