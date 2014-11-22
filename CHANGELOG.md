@@ -11,6 +11,7 @@
 * App Store links
 * swapped launch/download button order
 * Twitter Cards
+* changed button text
 
 ==1.0.0
 
