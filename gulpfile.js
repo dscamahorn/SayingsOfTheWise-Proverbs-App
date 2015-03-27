@@ -10,6 +10,8 @@ var minifyCSS = require('gulp-minify-css');
 var htmlreplace = require('gulp-html-replace'); //https://www.npmjs.org/package/gulp-html-replace
 var inject = require("gulp-inject"); //https://www.npmjs.org/package/gulp-inject
 var fileinclude = require('gulp-file-include'); //https://www.npmjs.org/package/gulp-file-include - check out this once it includes inc and template - https://www.npmjs.org/package/gulp-processhtml/
+var imagemin = require('gulp-imagemin'); //https://www.npmjs.com/package/gulp-imagemin/
+var pngquant = require('imagemin-pngquant');//https://www.npmjs.com/package/imagemin-pngquant
 
 // Paths
 var srcsite = 'src/';
@@ -62,6 +64,26 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(distsite + 'js'));
 });
 
+//Optimize Images
+gulp.task('images', function () {
+    //app
+    //site
+    gulp.src([srcsite + 'img/*'])
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(distsite + 'img'));
+    gulp.src([srcsite + 'img/touch/*'])
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(distsite + 'img/touch'));
+});
+
 // Move Files
 gulp.task('prepDist', function() {
     //app
@@ -88,10 +110,12 @@ gulp.task('prepDist', function() {
         }))
         .pipe(gulp.dest(distapp));
     //site
+    /*
     gulp.src([srcsite + 'img/*'])
         .pipe(gulp.dest(distsite + 'img'));
     gulp.src([srcsite + 'img/touch/*'])
         .pipe(gulp.dest(distsite + 'img/touch'));
+    */
     gulp.src([srcsite + 'fonts/*'])
         .pipe(gulp.dest(distsite + 'fonts'));
     gulp.src([srcsite + 'js/vendor/modernizr.min.js'])
@@ -128,4 +152,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'scripts', 'styles', 'prepDist', /*'watch'*/ ]);
+gulp.task('default', ['lint', 'scripts', 'styles', 'images', 'prepDist', /*'watch'*/ ]);
