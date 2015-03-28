@@ -48,6 +48,9 @@ gulp.task('styles', function() {
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
     //app
+    gulp.src([srcapp + '*.json'])
+        .pipe(jsonminify())
+        .pipe(gulp.dest(distapp));
     gulp.src([srcapp + 'js/vendor/modernizr.min.js', srcapp + 'js/vendor/jquery.min.js', srcapp + 'js/vendor/amplify.store.min.js', srcapp + 'js/vendor/shake.js', srcapp + 'js/helper.js', srcapp + 'js/plugins.js', srcapp + 'js/main.js'])
         .pipe(concat('scripts.js'))
         .pipe(uglify({
@@ -55,9 +58,6 @@ gulp.task('scripts', function() {
             compress: false
         }))
         .pipe(gulp.dest(distapp + 'js'));
-    gulp.src([srcapp + 'proverbs.json'])
-        .pipe(jsonminify())
-        .pipe(gulp.dest(distapp));
     //site
     gulp.src([srcsite + 'js/vendor/modernizr.min.js', srcsite + 'js/vendor/jquery.min.js', srcsite + 'js/vendor/greensock/TweenMax.min.js', srcsite + 'js/vendor/jquery.scrollmagic.min.js', srcsite + 'js/helper.js', srcsite + 'js/plugins.js', srcsite + 'js/main.js'])
         .pipe(concat('scripts.js'))
@@ -116,7 +116,7 @@ gulp.task('prepDist', function() {
         .pipe(gulp.dest(distapp + 'fonts'));
     gulp.src([srcapp + 'js/vendor/modernizr.min.js'])
         .pipe(gulp.dest(distapp + 'js/vendor'));
-    gulp.src([srcapp + '*.html', srcapp + '*.txt', srcapp + '*.json', srcapp + '*.appcache'])
+    gulp.src([srcapp + '*.html', srcapp + '*.txt', srcapp + '*.appcache'])
         .pipe(htmlreplace({
             'styles': 'css/styles.css',
             'cordova': '',
@@ -131,9 +131,11 @@ gulp.task('prepDist', function() {
     //site
     gulp.src([srcsite + 'fonts/*'])
         .pipe(gulp.dest(distsite + 'fonts'));
+    gulp.src([srcsite + '.htaccess'])
+        .pipe(gulp.dest(distsite + '.htaccess'));
     gulp.src([srcsite + 'js/vendor/modernizr.min.js'])
         .pipe(gulp.dest(distsite + 'js/vendor'));
-    gulp.src([srcsite + '*.html', srcsite + '*.txt', srcsite + '*.json', srcsite + '*.appcache'])
+    gulp.src([srcsite + '*.html', srcsite + '*.txt', srcsite + '*.appcache'])
         .pipe(htmlreplace({
             'styles': 'css/styles.css',
             'scripts': 'js/scripts.js',
@@ -153,14 +155,14 @@ gulp.task('watch', function() {
     gulp.watch(srcapp + 'css/*.css', ['styles']);
     gulp.watch(srcapp + '*.html', ['prepDist']);
     gulp.watch(srcapp + '*.txt', ['prepDist']);
-    gulp.watch(srcapp + '*.json', ['prepDist']);
+    //gulp.watch(srcapp + '*.json', ['prepDist']);
     gulp.watch(srcapp + '*.appcache', ['prepDist']);
     //site
     gulp.watch(srcsite + 'js/*.js', ['lint', 'scripts']);
     gulp.watch(srcsite + 'css/*.css', ['styles']);
     gulp.watch(srcsite + '*.html', ['prepDist']);
     gulp.watch(srcsite + '*.txt', ['prepDist']);
-    gulp.watch(srcsite + '*.json', ['prepDist']);
+    //gulp.watch(srcsite + '*.json', ['prepDist']);
     gulp.watch(srcsite + '*.appcache', ['prepDist']);
 });
 
