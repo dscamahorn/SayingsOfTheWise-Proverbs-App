@@ -647,7 +647,7 @@ function initNav() {
     });
 
     //Fav
-    $(".star").on("click", function(e) {
+    new MBP.fastButton($(".star").on("click", function(e) {
 
         //Hide/Show
         $("#screenPassage").fadeOut("fast");
@@ -659,19 +659,19 @@ function initNav() {
 
         return false;
 
-    });
+    }));
 
     //Info
-    $(".info").on("click", function(e) {
+    new MBP.fastButton($(".info").on("click", function(e) {
 
         showModal("modalInfo", msgAppInfo, '<a href="#">OK</a>');
 
         return false;
 
-    });
+    }));
 
     //Home
-    $(".home").on("click", function(e) {
+    new MBP.fastButton($(".home").on("click", function(e) {
 
         if ($(this).hasClass("homeFromPrivacy") === true) {
 
@@ -703,7 +703,7 @@ function initNav() {
 
         return false;
 
-    });
+    }));
 
     //Reload
     $("#passageLoad").on({
@@ -812,6 +812,7 @@ $(document).ready(function() {
     MBP.startupImage();
     MBP.scaleFix();
     MBP.preventScrolling();
+    MBP.enableActive();
 
     //Run
     runApp();

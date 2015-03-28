@@ -11,7 +11,8 @@ var htmlreplace = require('gulp-html-replace'); //https://www.npmjs.org/package/
 var inject = require("gulp-inject"); //https://www.npmjs.org/package/gulp-inject
 var fileinclude = require('gulp-file-include'); //https://www.npmjs.org/package/gulp-file-include - check out this once it includes inc and template - https://www.npmjs.org/package/gulp-processhtml/
 var imagemin = require('gulp-imagemin'); //https://www.npmjs.com/package/gulp-imagemin/
-var pngquant = require('imagemin-pngquant');//https://www.npmjs.com/package/imagemin-pngquant
+var pngquant = require('imagemin-pngquant'); //https://www.npmjs.com/package/imagemin-pngquant
+var jsonminify = require('gulp-jsonminify'); //https://www.npmjs.com/package/gulp-jsonminify
 
 // Paths
 var srcsite = 'src/';
@@ -47,15 +48,18 @@ gulp.task('styles', function() {
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
     //app
-    gulp.src([srcapp + 'js/vendor/jquery.min.js', srcapp + 'js/vendor/amplify.store.min.js', srcapp + 'js/vendor/shake.js', srcapp + 'js/helper.js', srcapp + 'js/plugins.js', srcapp + 'js/main.js'])
+    gulp.src([srcapp + 'js/vendor/modernizr.min.js', srcapp + 'js/vendor/jquery.min.js', srcapp + 'js/vendor/amplify.store.min.js', srcapp + 'js/vendor/shake.js', srcapp + 'js/helper.js', srcapp + 'js/plugins.js', srcapp + 'js/main.js'])
         .pipe(concat('scripts.js'))
         .pipe(uglify({
             mangle: false,
             compress: false
         }))
         .pipe(gulp.dest(distapp + 'js'));
+    gulp.src([srcapp + 'proverbs.json'])
+        .pipe(jsonminify())
+        .pipe(gulp.dest(distapp));
     //site
-    gulp.src([srcsite + 'js/vendor/jquery.min.js', srcsite + 'js/vendor/greensock/TweenMax.min.js', srcsite + 'js/vendor/jquery.scrollmagic.min.js', srcsite + 'js/helper.js', srcsite + 'js/plugins.js', srcsite + 'js/main.js'])
+    gulp.src([srcsite + 'js/vendor/modernizr.min.js', srcsite + 'js/vendor/jquery.min.js', srcsite + 'js/vendor/greensock/TweenMax.min.js', srcsite + 'js/vendor/jquery.scrollmagic.min.js', srcsite + 'js/helper.js', srcsite + 'js/plugins.js', srcsite + 'js/main.js'])
         .pipe(concat('scripts.js'))
         .pipe(uglify({
             mangle: false,
@@ -71,21 +75,21 @@ gulp.task('images', function () {
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
+            use: [pngquant({ quality: '65-80', speed: 4 })]
         }))
         .pipe(gulp.dest(distapp + 'img'));
     gulp.src([srcapp + 'img/touch/*'])
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
+            use: [pngquant({ quality: '65-80', speed: 4 })]
         }))
         .pipe(gulp.dest(distapp + 'img/touch'));
     gulp.src([srcapp + 'img/startup/*'])
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
+            use: [pngquant({ quality: '65-80', speed: 4 })]
         }))
         .pipe(gulp.dest(distapp + 'img/startup'));
     //site
@@ -93,14 +97,14 @@ gulp.task('images', function () {
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
+            use: [pngquant({ quality: '65-80', speed: 4 })]
         }))
         .pipe(gulp.dest(distsite + 'img'));
     gulp.src([srcsite + 'img/touch/*'])
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
+            use: [pngquant({ quality: '65-80', speed: 4 })]
         }))
         .pipe(gulp.dest(distsite + 'img/touch'));
 });
