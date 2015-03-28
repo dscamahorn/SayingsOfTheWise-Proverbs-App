@@ -67,6 +67,27 @@ gulp.task('scripts', function() {
 //Optimize Images
 gulp.task('images', function () {
     //app
+    gulp.src([srcapp + 'img/*'])
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(distapp + 'img'));
+    gulp.src([srcapp + 'img/touch/*'])
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(distapp + 'img/touch'));
+    gulp.src([srcapp + 'img/startup/*'])
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(distapp + 'img/startup'));
     //site
     gulp.src([srcsite + 'img/*'])
         .pipe(imagemin({
@@ -87,12 +108,6 @@ gulp.task('images', function () {
 // Move Files
 gulp.task('prepDist', function() {
     //app
-    gulp.src([srcapp + 'img/*'])
-        .pipe(gulp.dest(distapp + 'img'));
-    gulp.src([srcapp + 'img/touch/*'])
-        .pipe(gulp.dest(distapp + 'img/touch'));
-    gulp.src([srcapp + 'img/startup/*'])
-        .pipe(gulp.dest(distapp + 'img/startup'));
     gulp.src([srcapp + 'fonts/*'])
         .pipe(gulp.dest(distapp + 'fonts'));
     gulp.src([srcapp + 'js/vendor/modernizr.min.js'])
@@ -110,12 +125,6 @@ gulp.task('prepDist', function() {
         }))
         .pipe(gulp.dest(distapp));
     //site
-    /*
-    gulp.src([srcsite + 'img/*'])
-        .pipe(gulp.dest(distsite + 'img'));
-    gulp.src([srcsite + 'img/touch/*'])
-        .pipe(gulp.dest(distsite + 'img/touch'));
-    */
     gulp.src([srcsite + 'fonts/*'])
         .pipe(gulp.dest(distsite + 'fonts'));
     gulp.src([srcsite + 'js/vendor/modernizr.min.js'])
