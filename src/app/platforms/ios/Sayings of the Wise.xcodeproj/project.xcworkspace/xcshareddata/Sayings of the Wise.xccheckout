@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BE8075EB-3EF1-4BB5-89A0-B2D272FCCE85</string>
+	<string>CEACBC5B-20FB-4C69-B339-D276D7553176</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Sayings of the Wise</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>68C20C9EB020B16B550D0EA6E53D2E7F2B5C915E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SOTW</string>
+			<string>dev.sayingsofthewise.com</string>
 		</dict>
 	</array>
 </dict>

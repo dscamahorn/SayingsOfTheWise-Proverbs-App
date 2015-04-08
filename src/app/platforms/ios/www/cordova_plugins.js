@@ -18,8 +18,8 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.inappbrowser": "0.5.3",
-    "org.apache.cordova.statusbar": "0.1.8"
+    "org.apache.cordova.inappbrowser": "0.6.0",
+    "org.apache.cordova.statusbar": "0.1.10"
 }
 // BOTTOM OF METADATA
 });
